@@ -1,0 +1,11 @@
+.music {
+  padding: 20px;
+}
+
+.track {
+  margin-bottom: 20px;
+}
+
+.track audio {
+  margin-top: 10px;
+}

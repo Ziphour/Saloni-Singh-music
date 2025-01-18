@@ -1,0 +1,196 @@
+/* Global styles */
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #f6f0eb;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+}
+
+h1,
+h2,
+h3 {
+  font-family: "PT Sans Narrow", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+}
+/* Container for the app layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 6fr 4fr;
+  max-width: 80vw;
+  background: #fff;
+  /* border-radius: 10px; */
+  overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+  background: linear-gradient(
+    to top,
+    rgba(249, 223, 215, 1),
+    rgba(248, 224, 215, 1),
+    rgba(232, 195, 182, 1),
+    rgba(218, 174, 165, 1),
+    rgba(197, 158, 149, 1),
+    rgba(166, 136, 125, 1)
+  );
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  width: 50%;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e6d4ca;
+  width: 60%;
+}
+
+/* Main content area */
+
+.main-content {
+  height: 100vh;
+  padding-left: 5rem;
+  padding-right: 16rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(249, 223, 215, 1),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(249, 249, 249),
+    rgb(255, 255, 255)
+  );
+}
+
+.big-flow > * + * {
+  margin-top: 2rem;
+}
+
+.Small-flow > * + * {
+  margin-top: 1.25rem;
+}
+
+.main-content h1 {
+  font-size: 6rem;
+  background-image: repeating-linear-gradient(
+    to left,
+    rgb(239, 209, 200) 10%,
+    rgb(239, 210, 199) 20%,
+    rgba(232, 195, 182, 1) 30%,
+    rgba(218, 174, 165, 1) 40%,
+    rgba(197, 158, 149, 1) 50%,
+    rgba(166, 136, 125, 1) 60%
+  );
+  color: transparent;
+  background-clip: text;
+}
+
+.subtext {
+  font-size: 18px;
+  color: #666;
+}
+
+.cta-button {
+  background: #c89b91;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.cta-button:hover {
+  background: #a67a6c;
+  color: white;
+}
+
+/* Concert images grid */
+.concert-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.concert-images div {
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: 2rem;
+}
+
+.concert-images img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+/* Right panel with background image */
+.right-panel {
+  background: url("./assets/Saloni.png") center/cover no-repeat,
+    linear-gradient(
+      to top,
+      rgba(249, 223, 215, 1),
+      rgba(248, 224, 215, 1),
+      rgba(232, 195, 182, 1),
+      rgba(218, 174, 165, 1),
+      rgba(197, 158, 149, 1),
+      rgba(166, 136, 125, 1)
+    );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.right-panel h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.right-panel p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.promo img {
+  width: 100%;
+  border-radius: 10px;
+}
