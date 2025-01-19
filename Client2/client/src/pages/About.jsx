@@ -10,8 +10,9 @@ const About = () => {
           Saloni is a musician on a mission to make your playlists way more
           interesting. Starting out with covers; shes down to impact the pop
           scene Saloni is here to bring the fun, beauty and quality into the pop
-          scene and your speakers. From Halle Balle covers, to Adele to her own
-          original works; everything will be heard.
+          scene and your speakers. From Halle Balle covers, to her own original
+          works; everything will be heard- Dont be surprised to see her
+          excellence show in r&b, soul or alternative genres !
         </p>
         <p>
           What makes Saloni stand out is her ability to blend raw emotion with a

@@ -31,6 +31,14 @@ a:hover {
   color: inherit;
 }
 
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  /* font-size: 1.5em; */
+}
+
 h1,
 h2,
 h3 {
@@ -76,6 +84,10 @@ img {
   margin: 10px 10px;
 }
 
+.min-width {
+  min-width: 100px;
+}
+
 .iconlist {
   align-self: center;
   gap: 20px;
@@ -96,11 +108,10 @@ img {
 /* Container for the app layout */
 .container {
   display: grid;
-  grid-template-columns: 1fr 6fr 4fr;
-  width: 80vw;
+  grid-template-columns: 1fr 5fr 5fr;
+  width: 85vw;
   background: #fff;
   /* border-radius: 10px; */
-  overflow: hidden;
 }
 
 .contact-form {
@@ -205,7 +216,7 @@ img {
 .social-icons a {
   text-decoration: none;
   color: #ffffff;
-  width: 50%;
+  width: 3.5em;
   /* padding: 10px 20px; */
   border-radius: 1px;
   transition: 0.3s;
@@ -220,8 +231,8 @@ img {
 
 .main-content {
   height: 100vh;
-  padding-left: 5rem;
-  padding-right: 16rem;
+  padding-left: 6rem;
+  padding-right: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -245,19 +256,20 @@ img {
 }
 
 .main-content h1 {
-  font-size: 6rem;
-  color: rgba(232, 195, 182, 1);
-  /* background-image: repeating-linear-gradient(
-    to left,
-    rgb(239, 209, 200) 10%,
-    rgb(239, 210, 199) 20%,
-    rgba(232, 195, 182, 1) 30%,
-    rgba(218, 174, 165, 1) 40%,
-    rgba(197, 158, 149, 1) 50%,
-    rgba(166, 136, 125, 1) 60%
-  ); */
-  /* color: transparent;
-  background-clip: text; */
+  background-image: repeating-linear-gradient(
+    35deg,
+    rgba(248, 224, 215, 1),
+    rgba(218, 174, 165, 1),
+    rgb(242, 205, 192),
+    rgba(197, 158, 149, 1),
+    rgba(232, 195, 182, 1),
+    rgba(197, 158, 149, 1),
+    rgba(218, 174, 165, 1),
+    rgba(197, 158, 149, 1)
+  );
+  /* color: lightpink; */
+  color: transparent;
+  background-clip: text;
 }
 
 .loop {
@@ -284,7 +296,7 @@ img {
   padding: 1em 2.5em;
   text-decoration: none;
   border-radius: 2.5px;
-  font-size: 16px;
+  font-size: 0.85em;
   transition: 0.3s;
 }
 
@@ -297,6 +309,9 @@ img {
 .concert-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width <= 1200px) {
 }
 
 .gap-1 {

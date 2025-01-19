@@ -13,7 +13,7 @@ const Upcoming = () => (
           target="_blank"
           href="https://soundcloud.com/salonismusic/boyfriend-dove-cameron-cover-by-saloni"
         >
-          <img src={TBY} alt="song" className=" blackBorder" />
+          <img src={TBY} alt="song" className=" min-width" />
           <h2>Cover: Dove Cameron: Boyfriend</h2>
         </a>
       </div>
@@ -22,7 +22,7 @@ const Upcoming = () => (
           target="_blank"
           href="https://soundcloud.com/salonismusic/thinking-bout-you-dua-lipa-cover"
         >
-          <img src={Dove} alt="song" className=" blackBorder" />
+          <img src={Dove} alt="song" className=" min-width" />
           <h2>Cover: Dua Lipa: Thinking bout you</h2>
         </a>
       </div>
@@ -31,7 +31,7 @@ const Upcoming = () => (
           target="_blank"
           href="https://soundcloud.com/salonismusic/hi-lo-by-saloni"
         >
-          <img src={HiLo} alt="song" className=" blackBorder" />
+          <img src={HiLo} alt="song" className=" min-width" />
           <h2>Cover: Chloe x Halle: HiLo</h2>
         </a>
       </div>

@@ -18,7 +18,11 @@ const Music = () => {
       <h1>Discography</h1>
       <div className="small-flow">
         <div className="flex">
-          <h2>Thinking bout you</h2>
+          <img />
+          <div>
+            <h2>Thinking bout you</h2>
+            <h4></h4>
+          </div>
         </div>
         <AudioPlayer music={TBU} />
         {/* how to render this? */}
