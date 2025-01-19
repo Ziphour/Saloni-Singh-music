@@ -23,7 +23,7 @@ const Upcoming = () => (
       <div className="hoverExpand">
         <a href="https://soundcloud.com/salonismusic/hi-lo-by-saloni">
           <img src={HiLo} alt="song" className=" blackBorder" />
-          <h2>Cover: Dua Lipa: Thinking bout you</h2>
+          <h2>Cover: Chloe x Halle: HiLo</h2>
         </a>
       </div>
     </div>

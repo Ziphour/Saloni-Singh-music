@@ -3,6 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
@@ -54,7 +58,6 @@ img {
     #43434387
   ); /* Black gradient */
   color: #ffffff; /* White text/icons */
-  border-radius: 12px;
   padding: 20px; /* Larger padding for size */
   font-size: 1.2rem; /* Slightly larger text */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional shadow */
@@ -65,17 +68,22 @@ img {
 }
 
 /* Utilities */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin: 10px 10px;
+}
+
+.iconlist {
+  align-self: center;
+  gap: 20px;
+  width: 35%;
+}
 
 .hoverExpand {
   transition: transform 0.5s;
   transform: scale(1);
-}
-
-.blackBorder {
-  border-width: 2px;
-  border-style: solid;
-  border-image-source: rgba(0, 0, 0, 0.793);
-  border-image-slice: fill 1;
 }
 
 .hoverExpand:hover {
@@ -89,10 +97,83 @@ img {
 .container {
   display: grid;
   grid-template-columns: 1fr 6fr 4fr;
-  max-width: 80vw;
+  width: 80vw;
   background: #fff;
   /* border-radius: 10px; */
   overflow: hidden;
+}
+
+.contact-form {
+  background: #ffffff; /* Soft white background */
+  padding: 25px;
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: none; /* Remove strong shadow to keep the form subtle */
+  width: 100%;
+  color: #333; /* Dark text for contrast */
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e0e0e0; /* Light border for a clean look */
+}
+
+/* Form Title */
+.contact-form h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333; /* Darker title text */
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Form Fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px;
+  background-color: #f9f9f9; /* Soft background for fields */
+  font-size: 1rem;
+  color: #555; /* Slightly lighter text */
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ce9797; /* Blue focus border */
+  background-color: #ffffff; /* White background on focus */
+  outline: none;
+}
+
+/* Submit Button */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000; /* Calming blue */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: none;
+}
+
+.contact-form button:hover {
+  background-color: #ce9797; /* Slightly darker blue on hover */
+}
+
+/* Textarea for message */
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* Success or error message */
+.contact-form .message {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  text-align: center;
 }
 
 /* Sidebar styles */
@@ -145,7 +226,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 20px;
   background: linear-gradient(
     to top,
     rgba(249, 223, 215, 1),
@@ -230,12 +310,6 @@ img {
   display: grid;
   grid-template-columns: subgrid;
   gap: 2rem;
-}
-
-.concert-images img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 15px;
 }
 
 /* Right panel with background image */

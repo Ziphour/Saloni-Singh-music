@@ -1,17 +1,15 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const tourRoutes = require("./routes/tourRoutes");
 const { musicRouter } = require("./routes/musicRoutes");
-const merchRoutes = require("./routes/merchRoutes");
-const contactRoutes = require("./routes/contactRoutes");
+const { contactRoutes } = require("./routes/contactRoutes");
 
 const app = express();
 app.use(cors());
 
 // API routes
 app.use("/api/music", musicRouter);
-app.use("/api/contact", contactRoutes);
+// app.use("/api/contact", contactRoutes);
 
 // Server listening
 const PORT = process.env.PORT || 50;

@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import youtube from "../assets/youtube.png"; // Adjust the path based on your structure
+import ig from "../assets/instagram.png"; // Adjust the path based on your structure
+import twitter from "../assets/twitter.png"; // Adjust the path based on your structure
+import soundcloud from "../assets/soundcloud.png";
 // import "./Contact.css";
 
 const Contact = () => {
@@ -16,12 +20,12 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact main-content">
+    <div className="main-content">
       <h1>Contact Us</h1>
       {submitted ? (
         <p>Thank you for reaching out! We will get back to you soon.</p>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Name"
@@ -42,6 +46,20 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </form>
       )}
+      <div className="flex iconlist">
+        <a href="">
+          <img src={ig} alt="" />
+        </a>
+        <a href="">
+          <img src={youtube} alt="" />
+        </a>
+        <a href="">
+          <img src={soundcloud} alt="" />
+        </a>
+        <a href="">
+          <img src={twitter} alt="" />
+        </a>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,10 @@
-const express = require("express");
+const { Router } = require("express");
 const { getMusic } = require("../controllers/musicController");
-const musicRouter = express.Router();
+const musicRouter = Router();
 
-musicRouter.get("/", getMusic);
+musicRouter.get("/", (req, res) => {
+  console.log("hi music");
+  getMusic();
+});
 
-module.exports = { musicRouter };
+module.exports = { musicRouter: musicRouter };
