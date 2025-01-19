@@ -1,16 +1,17 @@
 /* Global styles */
 
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", serif;
+  font-family: "Oswald", serif;
+  /* Font is next big thing */
+  font-size: 1.125rem;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   color: #000000;
   background-color: #f6f0eb;
   margin: 0;
@@ -34,7 +35,7 @@ h1,
 h2,
 h3 {
   font-family: "PT Sans Narrow", serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -204,7 +205,6 @@ img {
 
 .social-icons a {
   text-decoration: none;
-  font-size: 18px;
   color: #ffffff;
   width: 50%;
   /* padding: 10px 20px; */
@@ -238,7 +238,7 @@ img {
 }
 
 .big-flow > * + * {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .Small-flow > * + * {
@@ -247,7 +247,8 @@ img {
 
 .main-content h1 {
   font-size: 6rem;
-  background-image: repeating-linear-gradient(
+  color: rgba(232, 195, 182, 1);
+  /* background-image: repeating-linear-gradient(
     to left,
     rgb(239, 209, 200) 10%,
     rgb(239, 210, 199) 20%,
@@ -255,9 +256,9 @@ img {
     rgba(218, 174, 165, 1) 40%,
     rgba(197, 158, 149, 1) 50%,
     rgba(166, 136, 125, 1) 60%
-  );
-  color: transparent;
-  background-clip: text;
+  ); */
+  /* color: transparent;
+  background-clip: text; */
 }
 
 .loop {
@@ -276,10 +277,6 @@ img {
   100% {
     background-position: 0 50%;
   }
-}
-
-.subtext {
-  font-size: 1.05rem;
 }
 
 .cta-button {
@@ -301,9 +298,21 @@ img {
 .concert-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+}
 
+.gap-1 {
+  gap: 0.75rem;
+}
+
+.gap-2 {
   gap: 2rem;
+}
+
+.crop > * {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .concert-images div {

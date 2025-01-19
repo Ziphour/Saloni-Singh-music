@@ -7,21 +7,30 @@ const Upcoming = () => (
   <div className="tour-dates">
     {/* change the name later on */}
     <h2>Latest Works:</h2>
-    <div className="concert-images">
+    <div className="concert-images gap-2">
       <div className="hoverExpand">
-        <a href="https://soundcloud.com/salonismusic/boyfriend-dove-cameron-cover-by-saloni">
+        <a
+          target="_blank"
+          href="https://soundcloud.com/salonismusic/boyfriend-dove-cameron-cover-by-saloni"
+        >
           <img src={TBY} alt="song" className=" blackBorder" />
           <h2>Cover: Dove Cameron: Boyfriend</h2>
         </a>
       </div>
       <div className="hoverExpand">
-        <a href="https://soundcloud.com/salonismusic/thinking-bout-you-dua-lipa-cover">
+        <a
+          target="_blank"
+          href="https://soundcloud.com/salonismusic/thinking-bout-you-dua-lipa-cover"
+        >
           <img src={Dove} alt="song" className=" blackBorder" />
           <h2>Cover: Dua Lipa: Thinking bout you</h2>
         </a>
       </div>
       <div className="hoverExpand">
-        <a href="https://soundcloud.com/salonismusic/hi-lo-by-saloni">
+        <a
+          target="_blank"
+          href="https://soundcloud.com/salonismusic/hi-lo-by-saloni"
+        >
           <img src={HiLo} alt="song" className=" blackBorder" />
           <h2>Cover: Chloe x Halle: HiLo</h2>
         </a>

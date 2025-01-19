@@ -19,7 +19,11 @@ const MainContent = () => (
       </p>
       <p className="subtext">Want to see Salonis full discography?</p>
       <div>
-        <a href="https://soundcloud.com/salonismusic" className="cta-button">
+        <a
+          target="_blank"
+          href="https://soundcloud.com/salonismusic"
+          className="cta-button"
+        >
           Click here
         </a>
       </div>
