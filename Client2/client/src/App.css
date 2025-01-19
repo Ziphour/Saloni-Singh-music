@@ -32,11 +32,7 @@ a:hover {
 }
 
 h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  /* font-size: 1.5em; */
+  font-size: clamp(4rem, 5vw, 6rem);
 }
 
 h1,
@@ -45,6 +41,10 @@ h3 {
   font-family: "PT Sans Narrow", serif;
   font-weight: 600;
   font-style: normal;
+}
+
+p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
 }
 
 img {
@@ -231,8 +231,8 @@ img {
 
 .main-content {
   height: 100vh;
-  padding-left: 6rem;
-  padding-right: 10rem;
+  padding-left: 4rem;
+  padding-right: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
