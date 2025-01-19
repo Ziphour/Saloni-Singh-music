@@ -89,9 +89,8 @@ img {
 
 .hoverExpand:hover {
   position: relative;
-  transition: transform 0.5s;
   background-color: default;
-  transform: scale(1.08);
+  transform: scale(1.1);
 }
 
 /* Container for the app layout */
@@ -298,7 +297,6 @@ img {
 .concert-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  overflow: hidden;
 }
 
 .gap-1 {
@@ -313,12 +311,6 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.concert-images div {
-  display: grid;
-  grid-template-columns: subgrid;
-  gap: 2rem;
 }
 
 /* Right panel with background image */
@@ -351,6 +343,5 @@ img {
 }
 
 .promo img {
-  width: 100%;
   border-radius: 10px;
 }
