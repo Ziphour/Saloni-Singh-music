@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact">
+    <div className="contact main-content">
       <h1>Contact Us</h1>
       {submitted ? (
         <p>Thank you for reaching out! We will get back to you soon.</p>

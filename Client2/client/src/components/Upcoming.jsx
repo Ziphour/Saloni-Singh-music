@@ -9,21 +9,21 @@ const Upcoming = () => (
     <h2>Latest Works:</h2>
     <div className="concert-images">
       <div>
-        <img src={TBY} alt="song" />
+        <img src={TBY} alt="song" className="hoverExpand" />
         <h2>Cover: Dove Cameron: Boyfriend</h2>
         <a href="https://soundcloud.com/salonismusic/boyfriend-dove-cameron-cover-by-saloni">
           Link
         </a>
       </div>
       <div>
-        <img src={Dove} alt="song" />
+        <img src={Dove} alt="song" className="hoverExpand" />
         <h2>Cover: Dua Lipa: Thinking bout you</h2>
         <a href="https://soundcloud.com/salonismusic/thinking-bout-you-dua-lipa-cover">
           Link
         </a>
       </div>
       <div>
-        <img src={HiLo} alt="song" />
+        <img src={HiLo} alt="song" className="hoverExpand" />
         <h2>Cover: Dua Lipa: Thinking bout you</h2>
         <a href="https://soundcloud.com/salonismusic/hi-lo-by-saloni">Link</a>
       </div>

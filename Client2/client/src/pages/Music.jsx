@@ -6,13 +6,13 @@ const Music = () => {
   const [tracks, setTracks] = useState([]);
   setTracks(0);
   useEffect(() => {
-    // axios.get(`${process.env.REACT_APP_API_URL}/api/music`).then((response) => {
-    //   setTracks(response.data);
-    // });
+    axios.get(`${process.env.REACT_APP_API_URL}/api/music`).then((response) => {
+      setTracks(response.data);
+    });
   }, []);
 
   return (
-    <div className="music">
+    <div className="music main-content">
       <h1>Music</h1>
       <div className="track-list">
         {tracks.map((track) => (

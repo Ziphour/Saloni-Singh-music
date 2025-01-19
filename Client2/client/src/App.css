@@ -1,10 +1,13 @@
 /* Global styles */
 
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-  font-family: "Arial", sans-serif;
-  color: #333;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: #000000;
   background-color: #f6f0eb;
   margin: 0;
   padding: 0;
@@ -25,6 +28,22 @@ h3 {
 img {
   width: 100%;
 }
+
+/* Utilities */
+
+.hoverExpand {
+  transition: transform 0.5s;
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.793);
+}
+
+.hoverExpand:hover {
+  position: relative;
+  transition: transform 0.5s;
+  background-color: default;
+  transform: scale(1.2);
+}
+
 /* Container for the app layout */
 .container {
   display: grid;
@@ -102,7 +121,7 @@ img {
 }
 
 .Small-flow > * + * {
-  margin-top: 1.25rem;
+  margin-top: 2rem;
 }
 
 .main-content h1 {
@@ -120,24 +139,40 @@ img {
   background-clip: text;
 }
 
+.loop {
+  animation: titleGradient 1s linear infinite;
+}
+
+@keyframes titleGradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
 .subtext {
-  font-size: 18px;
-  color: #666;
+  font-size: 1.05rem;
 }
 
 .cta-button {
-  background: #c89b91;
+  background: #2b2b2b;
   color: white;
-  padding: 10px 20px;
+  padding: 1em 2.5em;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 2.5px;
   font-size: 16px;
   transition: 0.3s;
 }
 
 .cta-button:hover {
-  background: #a67a6c;
-  color: white;
+  border: inset 3px solid #a67a6c;
 }
 
 /* Concert images grid */
