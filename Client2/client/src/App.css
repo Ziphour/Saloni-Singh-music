@@ -17,6 +17,15 @@ body {
   /* min-height: 100vh; */
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+a:hover {
+  color: inherit;
+}
+
 h1,
 h2,
 h3 {
@@ -34,14 +43,20 @@ img {
 .hoverExpand {
   transition: transform 0.5s;
   transform: scale(1);
-  background-color: rgba(0, 0, 0, 0.793);
+}
+
+.blackBorder {
+  border-width: 3px;
+  border-style: solid;
+  border-image-source: rgba(0, 0, 0, 0.793);
+  border-image-slice: fill 1;
 }
 
 .hoverExpand:hover {
   position: relative;
   transition: transform 0.5s;
   background-color: default;
-  transform: scale(1.2);
+  transform: scale(1.08);
 }
 
 /* Container for the app layout */
@@ -86,7 +101,7 @@ img {
   color: #ffffff;
   width: 50%;
   /* padding: 10px 20px; */
-  border-radius: 5px;
+  border-radius: 1px;
   transition: 0.3s;
 }
 
@@ -172,6 +187,7 @@ img {
 }
 
 .cta-button:hover {
+  color: lightpink;
   border: inset 3px solid #a67a6c;
 }
 
