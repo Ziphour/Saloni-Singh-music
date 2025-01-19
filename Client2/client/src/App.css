@@ -38,6 +38,32 @@ img {
   width: 100%;
 }
 
+/* Wrapper for player for centering */
+.player-wrapper {
+  /* max-width: 600px; Adjust the width */
+  /* margin: 0 auto;
+  padding: 20px; */
+  color: white;
+}
+
+/* Black gradient background */
+.rhap_container {
+  background: linear-gradient(
+    135deg,
+    #000000c1,
+    #43434387
+  ); /* Black gradient */
+  color: #ffffff; /* White text/icons */
+  border-radius: 12px;
+  padding: 20px; /* Larger padding for size */
+  font-size: 1.2rem; /* Slightly larger text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Optional shadow */
+}
+
+.rhap_container * {
+  color: #ffffff; /* Ensures all nested elements inherit white color */
+}
+
 /* Utilities */
 
 .hoverExpand {
@@ -46,7 +72,7 @@ img {
 }
 
 .blackBorder {
-  border-width: 3px;
+  border-width: 2px;
   border-style: solid;
   border-image-source: rgba(0, 0, 0, 0.793);
   border-image-slice: fill 1;

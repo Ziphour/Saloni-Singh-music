@@ -11,7 +11,7 @@ const MainContent = () => (
         a voice that effortlessly blends into the world of modern pop, Saloni
         brings a personal touch to every song
       </p>
-      <p className="subtext">Want to see Salonis full catalogue?</p>
+      <p className="subtext">Want to see Salonis full discography?</p>
       <div>
         <a href="https://soundcloud.com/salonismusic" className="cta-button">
           Click here
