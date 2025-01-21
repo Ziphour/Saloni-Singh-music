@@ -106,7 +106,13 @@ img {
 }
 
 .hoverExpand:hover {
+  overflow-y: visible;
   transform: scale(1.1);
+}
+
+.padding-2 {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Container for the app layout */
@@ -232,8 +238,9 @@ img {
 
 .main-content {
   height: 100dvh;
-  overflow-y: scroll clip;
-  overflow-x: visible;
+
+  overflow-y: scroll;
+
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   width: 80%;
@@ -315,10 +322,7 @@ img {
 .concert-images {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.overflowNone {
-  overflow: visible;
+  justify-content: center;
 }
 
 .gap-1 {

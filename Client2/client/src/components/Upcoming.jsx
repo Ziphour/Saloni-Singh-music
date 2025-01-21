@@ -7,13 +7,13 @@ const Upcoming = () => (
   <div className="">
     {/* change the name later on */}
     <h2>Latest Works:</h2>
-    <div className="concert-images gap-2 overflowNone">
-      <div className="hoverExpand overflowNone">
+    <div className="concert-images gap-2 padding-2 ">
+      <div className="hoverExpand ">
         <a
           target="_blank"
           href="https://soundcloud.com/salonismusic/boyfriend-dove-cameron-cover-by-saloni"
         >
-          <img src={TBY} alt="song" className="overflowNone min-width" />
+          <img src={TBY} alt="song" className=" min-width" />
           <h2>Cover: Dove Cameron: Boyfriend</h2>
         </a>
       </div>
