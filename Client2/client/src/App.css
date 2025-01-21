@@ -31,7 +31,7 @@ a:hover {
 }
 
 h1 {
-  font-size: clamp(4rem, 3vw + 1rem, 6rem);
+  font-size: clamp(4rem, 4vw + 2rem, 7rem);
 }
 
 h2 {
@@ -120,7 +120,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 5fr 5fr;
   width: 85vw;
-  background: #fff;
+
+  background: url("./assets/bg-crumpled.png") center/cover no-repeat;
   /* border-radius: 10px; */
 }
 
@@ -245,15 +246,6 @@ img {
   scrollbar-width: none; /* Firefox */
   width: 80%;
   margin: auto auto;
-  /* background: linear-gradient(
-    to top,
-    rgb(246, 234, 230),
-    rgb(255, 255, 255),
-    rgb(255, 255, 255),
-    rgb(255, 255, 255),
-    rgb(249, 249, 249),
-    rgb(255, 255, 255)
-  ); */
 }
 
 .main-content::-webkit-scrollbar {

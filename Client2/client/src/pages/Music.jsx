@@ -18,10 +18,12 @@ const Music = () => {
       <h1>Discography</h1>
       <div className="small-flow">
         <div className="flex">
-          <img />
           <div>
             <h2>Thinking bout you</h2>
-            <h4></h4>
+            <audio controls>
+              <source src={TBU}></source>
+              <source src="horse.mp3" type="audio/mp3"></source>
+            </audio>
           </div>
         </div>
         <AudioPlayer music={TBU} />
