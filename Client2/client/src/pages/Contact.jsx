@@ -46,7 +46,7 @@ const Contact = () => {
           <button type="submit">Submit</button>
         </form>
       )}
-      <div className="flex iconlist">
+      <div className="flex iconlist middle">
         <a href="">
           <img src={ig} alt="" />
         </a>
