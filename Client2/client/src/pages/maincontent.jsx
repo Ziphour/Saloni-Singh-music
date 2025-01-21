@@ -17,14 +17,13 @@ const MainContent = () => (
         to evolve her craft, drawing inspiration from new and old. Her goal is
         to shine and connect with others
       </p>
-      <p className="subtext">Want to see Salonis full discography?</p>
       <div>
         <a
           target="_blank"
           href="https://soundcloud.com/salonismusic"
           className="cta-button"
         >
-          Click here
+          Her discography
         </a>
       </div>
     </div>

@@ -4,7 +4,7 @@ import TBY from "../assets/artworks-TBY.jpg"; // Adjust the path based on your s
 import HiLo from "../assets/artworks-T.jpg"; // Adjust the path based on your structure
 
 const Upcoming = () => (
-  <div className="tour-dates">
+  <div className="">
     {/* change the name later on */}
     <h2>Latest Works:</h2>
     <div className="concert-images gap-2">
