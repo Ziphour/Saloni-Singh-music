@@ -3,6 +3,7 @@ import axios from "axios";
 import "../styles/Music.css";
 import AudioPlayer from "../components/AudioPlayer";
 import TBU from "../assets/audio/TBU.mp3";
+
 const Music = () => {
   // const [tracks, setTracks] = useState([]);
   // setTracks(0);
@@ -20,10 +21,6 @@ const Music = () => {
         <div className="flex">
           <div>
             <h2>Thinking bout you</h2>
-            <audio controls>
-              <source src={TBU}></source>
-              <source src="horse.mp3" type="audio/mp3"></source>
-            </audio>
           </div>
         </div>
         <AudioPlayer music={TBU} />

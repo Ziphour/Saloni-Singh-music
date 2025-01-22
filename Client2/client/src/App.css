@@ -31,11 +31,11 @@ a:hover {
 }
 
 h1 {
-  font-size: clamp(4rem, 4vw + 2rem, 7rem);
+  font-size: clamp(4rem, 4vw + 2rem, 6.5rem);
 }
 
 h2 {
-  font-size: clamp(1rem, 1vw + 0.5rem, 4rem);
+  font-size: clamp(1rem, 1vw + 0.5rem, 1.7rem);
 }
 
 h1,
@@ -121,7 +121,8 @@ img {
   grid-template-columns: 1fr 5fr 5fr;
   width: 85vw;
 
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat;
+  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
+    linear-gradient(white, white);
   /* border-radius: 10px; */
 }
 
