@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./pages/About";
 import Music from "./pages/Music";
-import Sidebar from "./components/sidebar";
+import Sidebar from "./components/Sidebar";
 import MainContent from "./pages/maincontent";
 import RightPanel from "./components/Rightpanel";
 import Contact from "./pages/Contact";
