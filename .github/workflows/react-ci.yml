@@ -3,10 +3,18 @@ name: CI/CD for React with Netlify
 on:
   push:
     branches:
-      - main
+      - main # Trigger on push to main branch (for deployment or updates)
+    paths:
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.png"
+      - "**.webp"
   pull_request:
-    branches:
-      - main
+    paths:
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.png"
+      - "**.webp"
 
 jobs:
   build:
