@@ -25,11 +25,10 @@ jobs:
         run: npm install
 
       # Step to compress all images in the repo
-      - name: Compress all images
-        uses: crush-pics/crush-pics-github-action@master
+      - name: Compress Images
+        uses: calibreapp/image-actions@master
         with:
-          api-key: ${{ secrets.CRUSH_API_KEY }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build React app
         run: npm run build
