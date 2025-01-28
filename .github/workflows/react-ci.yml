@@ -26,9 +26,10 @@ jobs:
 
       # Step to compress all images in the repo
       - name: Compress Images
-        uses: calibreapp/image-actions@master
+        uses: calibreapp/image-actions@main
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
+          # jpegquality: 80
 
       - name: Build React app
         run: npm run build
