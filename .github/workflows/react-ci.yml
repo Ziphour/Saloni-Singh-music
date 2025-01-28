@@ -1,48 +1,49 @@
-name: CI/CD for React with Netlify
+name: React CI with Linting and Caching
 
 on:
   push:
     branches:
-      - main # Trigger on push to main branch (for deployment or updates)
-    paths:
-      - "**.jpg"
-      - "**.jpeg"
-      - "**.png"
-      - "**.webp"
+      - main
   pull_request:
-    paths:
-      - "**.jpg"
-      - "**.jpeg"
-      - "**.png"
-      - "**.webp"
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout code
       - name: Checkout code
-        uses: actions/checkout@v4
-      # test
-      - name: Cache Node Modules
+        uses: actions/checkout@v3
+
+      # Step 2: Cache node_modules
+      - name: Cache node_modules
         uses: actions/cache@v2
         with:
-          # The key for caching based on the content of the package-lock.json file
           path: node_modules
           key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-modules-
 
+      # Step 3: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: "16"
 
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: npm install
 
+      # Step 5: Run ESLint to check for linting issues
       - name: Run ESLint
         run: npm run lint
 
+      # Step 6: Run tests (optional)
+      - name: Run tests
+        run: npm test
+
+      # Step 7: Build the React app
       - name: Build React app
         run: npm run build
