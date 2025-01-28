@@ -29,6 +29,7 @@ jobs:
         uses: crush-pics/crush-pics-github-action@master
         with:
           api-key: ${{ secrets.CRUSH_API_KEY }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build React app
         run: npm run build
