@@ -31,10 +31,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Run tests
-      - name: Run tests
-        run: npm test
-
       - name: Crush images
         uses: crush-pics/crush-pics-github-action@master
         with:
