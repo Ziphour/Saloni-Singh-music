@@ -1,20 +1,20 @@
 name: CI/CD for React with Netlify
 
 on:
-  push:
-    branches:
-      - main # Trigger on push to main branch (for deployment or updates)
-    paths:
-      - "**.jpg"
-      - "**.jpeg"
-      - "**.png"
-      - "**.webp"
   pull_request:
     paths:
       - "**.jpg"
       - "**.jpeg"
       - "**.png"
-      - "**.webp"
+      - "**.gif"
+  push:
+    branches:
+      - main
+    paths:
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.png"
+      - "**.gif"
 
 jobs:
   build:
@@ -32,13 +32,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Step to compress all images in the repo
-      - name: Compress Images
-        uses: calibreapp/image-actions@main
+      - name: Optimize Images
+        uses: grafana/image-optim-action@v1
         with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          # jpegquality: 80
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Commit Optimized Images
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "GitHub Actions"
+          author_email: "actions@github.com"
+          message: "Optimize images"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build React app
         run: npm run build
 
