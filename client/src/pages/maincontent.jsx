@@ -15,7 +15,7 @@ const MainContent = () => (
       <p>
         Driven by a passion for both musical and performance arts, she continues
         to evolve her craft, drawing inspiration from new and old. Her goal is
-        to shine and connect with others
+        to shine and connect with others through her works
       </p>
       <div>
         <a
