@@ -1,20 +1,20 @@
 name: CI/CD for React with Netlify
 
 on:
+  push:
+    branches:
+      - main # Trigger on push to main branch (for deployment or updates)
+    paths:
+      - "**.jpg"
+      - "**.jpeg"
+      - "**.png"
+      - "**.webp"
   pull_request:
     paths:
       - "**.jpg"
       - "**.jpeg"
       - "**.png"
-      - "**.gif"
-  push:
-    branches:
-      - main
-    paths:
-      - "**.jpg"
-      - "**.jpeg"
-      - "**.png"
-      - "**.gif"
+      - "**.webp"
 
 jobs:
   build:
@@ -35,25 +35,5 @@ jobs:
       - name: Run ESLint
         run: npm run lint
 
-      - name: Optimize Images
-        uses: grafana/image-optim-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit Optimized Images
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: "GitHub Actions"
-          author_email: "actions@github.com"
-          message: "Optimize images"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build React app
         run: npm run build
-
-      # Optional: Step to deploy the built app to Netlify
-      - name: Deploy to Netlify
-        run: npm run deploy
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
