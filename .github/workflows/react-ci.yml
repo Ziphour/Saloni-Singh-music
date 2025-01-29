@@ -34,7 +34,9 @@ jobs:
 
       # Step 4: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: |
+        cd ./client
+        npm install
 
       # Step 6: Run tests (optional)
       # - name: Run tests
