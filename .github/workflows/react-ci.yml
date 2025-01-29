@@ -45,5 +45,5 @@ jobs:
       # Step 7: Build the React app
       - name: Build React app
         run: |
-        cd client
-        npm run build
+          cd client
+          npm run build
