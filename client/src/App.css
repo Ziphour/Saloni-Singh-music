@@ -114,7 +114,8 @@ img {
   display: grid;
   grid-template-columns: 1fr 5fr 5fr;
   width: 78vw;
-
+  margin: 0;
+  margin-top: 0;
   background: url("./assets/bg-crumpled.png") center/cover no-repeat,
     linear-gradient(white, white);
   /* border-radius: 10px; */
