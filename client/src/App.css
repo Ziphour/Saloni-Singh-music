@@ -207,9 +207,9 @@ img {
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  align-content: space-around;
+  align-content: space-between;
   /* align-items: ; */
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .social-icons a {
@@ -456,10 +456,11 @@ img {
 .social-icons {
   display: flex;
   flex-direction: row;
-  gap: 6rem;
+  gap: 0rem;
   align-content: space-around;
   /* align-items: ; */
-  justify-content: space-around;
+  justify-content: space-between;
+  width: calc(90%);
 }
 
 .right-panel {
