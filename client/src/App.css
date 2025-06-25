@@ -426,8 +426,8 @@ img {
 @media (max-width: 1200px) {
   .container {
   display: block;
-  width: 78vw;
-
+  width: calc(100vw - 4rem);
+    top: 0;
   background: url("./assets/bg-crumpled.png") center/cover no-repeat,
     linear-gradient(white, white);
   }
