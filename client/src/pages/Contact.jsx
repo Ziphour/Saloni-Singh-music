@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="main-content">
+    <div className="main-content big-flow">
       <h1>Contact Us</h1>
       {submitted ? (
         <p>Thank you for reaching out! We will get back to you soon.</p>

@@ -4,10 +4,10 @@ import TBY from "../assets/artworks-TBY.jpg"; // Adjust the path based on your s
 import HiLo from "../assets/artworks-T.jpg"; // Adjust the path based on your structure
 
 const Upcoming = () => (
-  <div className="">
+  <div className="Small-flow">
     {/* change the name later on */}
     <h2>Her Latest:</h2>
-    <div className="concert-images gap-2 padding-2 ">
+    <div className="concert-images gap-2 padding-2 small-flow">
       <div className="hoverExpand ">
         <a
           target="_blank"

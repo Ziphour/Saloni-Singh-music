@@ -15,9 +15,9 @@ const Music = () => {
   // }, []);
 
   return (
-    <div className=" main-content ">
+    <div className=" main-content big-flow">
       <h1>Discography</h1>
-      <div className="small-flow">
+      <div className="Small-flow">
         <div className="flex">
           <div>
             <h2>Thinking bout you</h2>

@@ -4,8 +4,8 @@ import ConcertImages from "../components/ConcertImages";
 const About = () => {
   return (
     <div className="main-content big-flow">
+      <h1 className="">About</h1>
       <div className="Small-flow">
-        <h1 className="">About</h1>
         <p>
           Saloni is a musician on a mission to make your playlists way more
           interesting. Starting out with covers; shes down to impact the pop
@@ -26,8 +26,6 @@ const About = () => {
         </p>
       </div>
 
-      {/* Images needed here */}
-      {/* Update gradient to makke it more intense */}
       <ConcertImages />
     </div>
   );
