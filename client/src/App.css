@@ -409,3 +409,75 @@ img {
     gap: 20px;
   }
 }
+
+
+/* .container {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+  width: 78vw;
+
+  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
+    linear-gradient(white, white);
+  /* border-radius: 10px; */
+  
+/* Breakpoints */
+
+@media (max-width: 1200px) {
+  .container {
+  display: block;
+  width: 78vw;
+
+  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
+    linear-gradient(white, white);
+  }
+
+  .sidebar {
+  background: linear-gradient(
+    to top,
+    rgba(249, 223, 215, 1),
+    rgba(248, 224, 215, 1),
+    rgba(232, 195, 182, 1),
+    rgba(218, 174, 165, 1),
+    rgba(197, 158, 149, 1),
+    rgba(166, 136, 125, 1)
+  );
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  align-content: space-around;
+  /* align-items: ; */
+  justify-content: space-around;
+}
+
+.right-panel {
+  background: url("./assets/Saloni.png") center/cover no-repeat,
+    linear-gradient(
+      to top,
+      rgba(249, 223, 215, 1),
+      rgba(248, 224, 215, 1),
+      rgba(232, 195, 182, 1),
+      rgba(218, 174, 165, 1),
+      rgba(197, 158, 149, 1),
+      rgba(166, 136, 125, 1)
+    );
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+
+  display: none;
+}
+
+
+
+/* ICONS AND BACKGROUND, and bottom banner */
+}
