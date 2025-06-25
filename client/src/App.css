@@ -15,7 +15,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   color: #000000;
-  background-color: #f6f0eb;
+  background-color: #e9ddd1 ;
+  /* dfd3c9 */
   margin: 0;
   padding: 0;
   display: flex;
@@ -441,6 +442,10 @@ img {
     rgba(197, 158, 149, 1),
     rgba(166, 136, 125, 1)
   );
+  position: sticky;
+  top: 0;
+  z-index: 4;
+
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
