@@ -16,6 +16,20 @@
 
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body h1:first-child {
+  margin-top: 0;
+}
+
+h1, h2, p, … {
+  margin-top: 0;
+}
+
+
 body {
   font-family: "Oswald", serif;
   /* Font is next big thing */
