@@ -495,3 +495,15 @@ img {
 
 /* ICONS AND BACKGROUND, and bottom banner */
 }
+
+@media (max-width: 600px) {
+
+  .container {
+  display: block;
+  width: calc(100vw );
+    top: 0;
+  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
+    linear-gradient(white, white);
+  }
+
+}
