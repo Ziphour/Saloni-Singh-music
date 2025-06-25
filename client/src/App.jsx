@@ -11,7 +11,6 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Sidebar />
         <Routes>
           <Route path="/" element={<MainContent />} />
           <Route path="/about" element={<About />} />
