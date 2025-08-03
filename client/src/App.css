@@ -1,7 +1,51 @@
 /* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap');
+@font-face {
+  font-family:"Azurite" ;
+  src: url(assets/Fonts/Azurite-2.ttf) format('truetype');
+  font-weight: medium;
+}
+@font-face {
+  font-family:"Kisah Horor Sobat" ;
+  src: url(assets/Fonts/Kisah\ Horor\ Sobat.ttf) format('truetype');
 
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+}
+
+@font-face {
+  font-family:"Kisah Horor Sobat" ;
+  src: url(assets/Fonts/Kisah\ Horor\ Sobat.otf) format('opentype');
+
+}
+
+@font-face {
+  font-family:"Veteran TypeWriter" ;
+  src: url(assets/Fonts/veteran\ typewriter.ttf) format('truetype');
+}
+
+
+:root{
+
+  --main-bg-colour:#e6ccb6;
+  
+  --banner-bg-colour-1: linear-gradient(to left,lightblue, darkblue,);
+  /* Need to change the blues to the PS version banner colours */
+  --banner-bg-colour-2: #faeeb1;
+
+  --noise-1:;
+  
+  --nav-colour-1:#6a5d56;
+  --nav-colour-2:#e6ccb6;
+  --body-colour: black;
+
+  --flow-1: 2rem;
+
+  --font-header:  "Kisah Horor Sobat";
+  --font-subheading: "Azurite";
+  --font-body: "Merriweather";
+  --font-marker: "Permanent Marker" ;
+  --font-navbar: "Veteran Typewriter"
+}
+
 
 * {
   box-sizing: border-box;
@@ -13,7 +57,6 @@
         outline: 0;
         font-size: 100%;
         vertical-align: baseline;
-        background: transparent;
 
 }
 
@@ -21,7 +64,6 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-
 }
 
 body h1:first-child {
@@ -34,7 +76,7 @@ h1, h2, p, … {
 
 
 body {
-  font-family: "Oswald", serif;
+  font-family: var(--font-body), serif;
   /* Font is next big thing */
   font-size: 1.125rem;
   font-optical-sizing: auto;
@@ -86,34 +128,24 @@ img {
   max-width: 100%;
 }
 
-/* Wrapper for player for centering */
-.player-wrapper {
-  /* max-width: 600px; Adjust the width */
-  /* margin: 0 auto;
-  padding: 20px; */
-  color: white;
-}
-
 /* Utilities */
-.flex {
+.flexNav {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.min-width {
-  min-width: 100px;
+.flexSpread{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
-.middle {
-  margin: 1em auto;
+.Screen-sizing{
+  max-width: calc(100vw - 12.5rem);
 }
 
-.iconlist {
-  align-self: center;
-  gap: 20px;
-  width: clamp(4em, 8vw + 4rem, 14rem);
-}
 
 .hoverExpand {
   transition: transform 0.5s;
@@ -125,409 +157,28 @@ img {
   transform: scale(1.1);
 }
 
-.padding-2 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 
-/* Container for the app layout */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 5fr;
-  width: 78vw;
-  padding: 0;
-  margin: 0;
-  margin-top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  /* border-radius: 10px; */
-}
-
-.contact-form {
-  background: #ffffff; /* Soft white background */
-  padding: 25px;
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: none; /* Remove strong shadow to keep the form subtle */
-  width: 100%;
-  color: #333; /* Dark text for contrast */
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #e0e0e0; /* Light border for a clean look */
-}
-
-/* Form Title */
-.contact-form h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #333; /* Darker title text */
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* Form Fields */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 8px;
-  background-color: #f9f9f9; /* Soft background for fields */
-  font-size: 1rem;
-  color: #555; /* Slightly lighter text */
-  transition: all 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ce9797; /* Blue focus border */
-  background-color: #ffffff; /* White background on focus */
-  outline: none;
-}
-
-/* Submit Button */
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #000000; /* Calming blue */
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: none;
-}
-
-.contact-form button:hover {
-  background-color: #ce9797; /* Slightly darker blue on hover */
-}
-
-/* Textarea for message */
-.contact-form textarea {
-  height: 150px;
-  resize: none;
-}
-
-/* Success or error message */
-.contact-form .message {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-/* Sidebar styles */
-.sidebar {
-  background: linear-gradient(
-    to top,
-    rgba(249, 223, 215, 1),
-    rgba(248, 224, 215, 1),
-    rgba(232, 195, 182, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1),
-    rgba(166, 136, 125, 1)
-  );
-  padding: 0rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-  align-content: space-between;
-  /* align-items: ; */
-  justify-content: space-between;
-}
-
-.social-icons a {
-  /* padding: 10px 1px; */
-  width: clamp(1em, 2.5vw + 0.45rem, 3.5em);
-  transition: 0.25s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-/* Main content area */
-
-.main-content {
-  height: 100dvh;
-
-  overflow-y: scroll;
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  width: 80%;
-  margin: auto auto;
-}
-
-.main-content::-webkit-scrollbar {
-  display: none;
-}
-
-.big-flow > * + * {
-  margin-top: 4rem;
-}
-
-.Small-flow > * + * {
+.flow-1 > * + *{
   margin-top: 2rem;
 }
 
-.main-content h1 {
-  background-image: repeating-linear-gradient(
-    35deg,
-    rgba(248, 224, 215, 1),
-    rgba(218, 174, 165, 1),
-    rgb(242, 205, 192),
-    rgba(197, 158, 149, 1),
-    rgba(232, 195, 182, 1),
-    rgba(197, 158, 149, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1)
-  );
-  /* color: lightpink; */
-  color: transparent;
-  background-clip: text;
+.flow-2 > * + *{
+  margin-top: 4rem;
 }
 
-.loop {
-  animation: titleGradient 1s linear infinite;
+.flow-3 > * + *{
+  margin-top: 6rem;
 }
 
-@keyframes titleGradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 0%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+.flow-4 > * + *{
+  margin-top: 8rem;
 }
 
-.cta-button {
-  background: #2b2b2b;
-  color: white;
-  padding: 1em 2.5em;
-  text-decoration: none;
-  border-radius: 2.5px;
-  font-size: 0.85em;
-  transition: 0.3s;
-}
-
-.cta-button:hover {
-  color: lightpink;
-  border: inset 3px solid #a67a6c;
-}
-
-/* Concert images grid */
-.concert-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-}
-
-.gap-1 {
-  gap: 0.75rem;
-}
-
-.gap-2 {
-  gap: 2rem;
-}
-
-.crop > * {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Right panel with background image */
-.right-panel {
-  background: url("./assets/Saloni.png") center/cover no-repeat,
-    linear-gradient(
-      to top,
-      rgba(249, 223, 215, 1),
-      rgba(248, 224, 215, 1),
-      rgba(232, 195, 182, 1),
-      rgba(218, 174, 165, 1),
-      rgba(197, 158, 149, 1),
-      rgba(166, 136, 125, 1)
-    );
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.right-panel h2 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.right-panel p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.rhap_container {
-  background: linear-gradient(
-    to right,
-    #9d9d9d,
-    #a3a3a3
-  ); /* Light pink gradient */
-  border-radius: 30px; /* Smooth rounded corners */
-  padding: 15px 30px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rhap_progress-bar {
-  background: #fff;
-  height: 5px;
-  border-radius: 5px;
-}
-
-.rhap_progress-filled {
-  background: #ffa4c4; /* Soft pink progress bar */
-}
-
-.rhap_controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rhap_controls button {
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 36px; /* Larger icons for a more fun look */
-  margin: 0 15px; /* Spread the buttons out */
-  transition: transform 0.2s ease-in-out;
-}
-
-.rhap_controls button:hover {
-  color: #f5e2e6; /* Lighter pink on hover */
-  transform: scale(1.2); /* Slight scale-up effect */
-}
-
-.rhap_time {
-  font-size: 14px;
-  color: #ffe4e1; /* Light pink time text */
-}
-
-.rhap_volume-bar {
-  background: rgba(255, 255, 255, 0.6); /* Transparent volume bar */
-}
-
-.rhap_button-clear {
-  color: #fff;
-}
-
-@media (width <= 1400px) {
-  .concert-images {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-}
-
-
-/* .container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 5fr;
-  width: 78vw;
-
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  /* border-radius: 10px; */
-  
 /* Breakpoints */
 
-@media (max-width: 1200px) {
-  .container {
-  display: block;
-  width: calc(100vw - 4rem);
-    top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  }
-
-  .sidebar {
-  background: linear-gradient(
-    to top,
-    rgba(249, 223, 215, 1),
-    rgba(248, 224, 215, 1),
-    rgba(232, 195, 182, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1),
-    rgba(166, 136, 125, 1)
-  );
-  position: sticky;
-  top: 0;
-  margin-top: 0;
-  z-index: 4;
-
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media  only screen and (max-width: 600px) {
+  .Screen-sizing{
+  max-width: 100%;
 }
-
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 0rem;
-  align-content: space-around;
-  /* align-items: ; */
-  justify-content: space-between;
-  width: calc(90%);
-}
-
-.right-panel {
-  background: url("./assets/Saloni.png") center/cover no-repeat,
-    linear-gradient(
-      to top,
-      rgba(249, 223, 215, 1),
-      rgba(248, 224, 215, 1),
-      rgba(232, 195, 182, 1),
-      rgba(218, 174, 165, 1),
-      rgba(197, 158, 149, 1),
-      rgba(166, 136, 125, 1)
-    );
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-
-  display: none;
-}
-
-
-
-/* ICONS AND BACKGROUND, and bottom banner */
-}
-
-@media (max-width: 600px) {
-
-  .container {
-  display: block;
-  width: calc(100vw );
-    top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  }
 
 }
