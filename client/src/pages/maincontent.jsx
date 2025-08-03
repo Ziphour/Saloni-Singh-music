@@ -3,7 +3,7 @@ import Upcoming from "../components/Upcoming.jsx";
 
 const MainContent = () => (
   <div className="main-content big-flow">
-    <h1 className="loop">Saloni Singh</h1>
+    <h1 className="loop">SALONI SINGH</h1>
     <div className="Small-flow">
       <p className="subtext">
         Saloni is a rising pop singer with a passion for delivering energetic
