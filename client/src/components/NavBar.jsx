@@ -12,7 +12,7 @@ return(
         </ul>
         <ul className="flexAround">
             <li><button><img src="" alt="Instagram Icon"/> </button></li>
-            <li><button><img src="" alt="Facebook Icon"/> </button></li>
+            <li><button><img src="" alt="Youtube Icon"/> </button></li>
             <li><button><img src="" alt="Soundcloud Icon"/> </button></li>
         </ul>
     </nav>
