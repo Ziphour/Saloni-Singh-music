@@ -7,8 +7,6 @@ import concert4 from "../assets/concert4.jpg"; // Adjust the path based on your 
 import concert5 from "../assets/concert5.jpg"; // Adjust the path based on your structure
 import concert6 from "../assets/concert6.webp"; // Adjust the path based on your structure
 
-
-
 const ConcertImages = () => (
   <div className="concert-images crop gap-1">
     <img src={concert1} alt="Concert" />

@@ -5,14 +5,10 @@ import Footer from "../components/Footer.jsx";
 const HomePage = () => (
   <div className="">
     {/* Hero */}
-    <div>
-
-    </div>
+    <div></div>
     {/* Promo */}
-    <div>
-
-    </div>
-    <Footer/>  
+    <div></div>
+    <Footer />
   </div>
 );
 

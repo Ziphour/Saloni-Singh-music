@@ -9,13 +9,10 @@ const Contact = () => {
   return (
     <div>
       <section className="">
-        <ContactForm/>
+        <ContactForm />
       </section>
-    <section>
-      {/* Place where all URLs/Social media acc are shown */}
-    </section>
+      <section>{/* Place where all URLs/Social media acc are shown */}</section>
     </div>
- 
   );
 };
 
