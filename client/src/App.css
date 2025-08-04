@@ -135,7 +135,7 @@ img {
 }
 
 /* Utilities */
-.flexNav {
+.flexAround{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -178,6 +178,11 @@ img {
 
 .flow-4 > * + *{
   margin-top: 8rem;
+}
+
+/* Transistion onto page onclick */
+.pageTransistion > * {
+  transition: ;
 }
 
 /* block */
@@ -261,3 +266,6 @@ button:active {
 /* that needs to be a form */
 /* Make sure h1's, h2's are correct after html is written up */
 /* button needed here, make sure to add cursor pointer */
+/* When collapsing need hamburger */
+/* Collapsing banners? */
+/* Re-do the components */

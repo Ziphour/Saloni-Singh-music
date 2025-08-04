@@ -3,29 +3,21 @@ import ConcertImages from "../components/ConcertImages";
 
 const About = () => {
   return (
-    <div className="main-content big-flow">
-      <h1 className="">About</h1>
-      <div className="Small-flow">
-        <p>
-          Saloni is a musician on a mission to make your playlists way more
-          interesting. Starting out with covers; shes down to impact the pop
-          scene Saloni is here to bring the fun, beauty and quality into the pop
-          scene and your speakers. From Halle Balle covers, to her own original
-          works; everything will be heard- Dont be surprised to see her
-          excellence show in r&b, soul or alternative genres !
-        </p>
-        <p>
-          What makes Saloni stand out is her ability to blend raw emotion with a
-          fresh, modern sound. Whether she’s belting out a soulful ballad or
-          creating an upbeat pop anthem, she pours her heart into every note.
-          channeling her inner rhythm, she’s all about making music that feels
-          like a hug, a party, or a moment of clarity—depending on what you need
-          that day. Get ready, because Saloni is just getting started, and she’s
-          not slowing down anytime soon. Follow her for the journey because this
-          is just the beginning, and she’s about to make some serious noise.
-        </p>
+    // Flow? 
+    <div className="">
+      <div className="flexAround">
+        <div>
+          <img src="" alt="Image of the artist Saloni Singh"/>
+        </div>
+          <p>
+            Hey, I’m Saloni Singh — a pop artist with glitter in my veins and a love for making music that makes people *feel*. I grew up in the heart of Miami, where the sounds of dance beats and soulful melodies were always in the air. From the time I could walk, I was putting on shows in the living room, stealing my mom’s hairbrush to use as a mic, and dreaming of singing to crowds who knew every word. Now, I’m living that dream one beat at a time.
+constantly chasing the next big sound that’ll make your heart race. For me, music is magic — it’s how we connect, how we heal, how we celebrate. So if you’re into big choruses, honest lyrics, and the kind of songs that make you want to sing with the windows down, I’m your girl. Welcome to my world — let’s dance through it together.
+Honest lyrics, and the kind of songs that make y your girl. Welcome to my world — let’s dance through it together. Hey, I’m Saloni Singh — a pop artist with glitter in my veins and a love for 
+          </p>
       </div>
-
+      <p>
+        My music is all about emotion you can move to. I blend catchy pop melodies with dancefloor-ready beats, but I always make sure the lyrics come from something real—love, heartbreak, self-discovery, and everything in between. 
+      </p>
       <ConcertImages />
     </div>
   );
