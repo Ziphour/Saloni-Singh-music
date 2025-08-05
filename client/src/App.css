@@ -2,17 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap");
 @font-face {
   font-family: "Azurite";
-  src: url(assets/Fonts/Azurite-2.ttf) format("truetype");
+  src: url(../public/assets/Fonts/Azurite-2.ttf) format("truetype");
   font-weight: medium;
 }
 @font-face {
   font-family: "Kisah Horor Sobat";
-  src: url(assets/Fonts/KisahHororSobat.ttf) format("truetype");
+  src: url(../public/assets/Fonts/KisahHororSobat.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Veteran TypeWriter";
-  src: url(assets/Fonts/veteran\ typewriter.ttf) format("truetype");
+  src: url(../public/assets/Fonts/veterantypewriter.ttf) format("truetype");
 }
 
 :root {
@@ -241,44 +241,6 @@ button {
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
-}
-
-button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-
-button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
-button:hover .svg-wrapper {
-  animation: fly-1 0.6s ease-in-out infinite alternate;
-}
-
-button:hover svg {
-  transform: translateX(1.2em) rotate(45deg) scale(1.1);
-}
-
-button:hover span {
-  transform: translateX(5em);
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-@keyframes fly-1 {
-  from {
-    transform: translateY(0.1em);
-  }
-
-  to {
-    transform: translateY(-0.1em);
-  }
 }
 
 .footer {

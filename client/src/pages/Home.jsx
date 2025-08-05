@@ -17,7 +17,7 @@ const HomePage = () => (
       </div>
       <div>
         <img
-          src="./assets/Images/SaloniIMG.png"
+          src="/assets/Images/SaloniIMG.png"
           alt="Image of the music artist Saloni"
         />
       </div>
