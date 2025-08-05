@@ -1,7 +1,7 @@
 // MainContent.jsx
 
 const HomePage = () => (
-  <div className="">
+  <div className="flow-4">
     {/* Hero */}
     <section className="hero noise Screen-sizing-2 flexAround marginEven">
       {/* written text */}
@@ -23,19 +23,21 @@ const HomePage = () => (
       </div>
     </section>
     {/* Promo */}
-    <section className="flexSpread Screen- yellow-bg ">
-      <div className="sizing-2 marginEven">
-        <p>
-          Guess what just dropped, folks? I've got a shiny new song cover hot
-          off the mic and ready to bless your ears! It's got the vibes, the
-          feels, and just the right sprinkle of magic to make you hit replay
-          (like...a lot). Whether you're singing along in the shower or jamming
-          out in traffic, this one’s for you. Go check it out, turn it up, and
-          let the music do its thing For you
-        </p>
-      </div>
-      <div>
-        <img src="./assets/Images/CD.png" />
+    <section className="  yellow-bg ">
+      <div className="Screen-sizing-2 marginEven flexSpread ">
+        <div className="">
+          <p>
+            Guess what just dropped, folks? I've got a shiny new song cover hot
+            off the mic and ready to bless your ears! It's got the vibes, the
+            feels, and just the right sprinkle of magic to make you hit replay
+            (like...a lot). Whether you're singing along in the shower or
+            jamming out in traffic, this one’s for you. Go check it out, turn it
+            up, and let the music do its thing For you
+          </p>
+        </div>
+        <div>
+          <img src="./assets/Images/CD.png" />
+        </div>
       </div>
     </section>
   </div>

@@ -43,6 +43,45 @@
   --font-body: "Merriweather";
   --font-marker: "Permanent Marker";
   --font-navbar: "Veteran Typewriter";
+
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12–14px */
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem); /* 14–16px */
+  --font-size-md: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); /* 16–20px */
+  --font-size-lg: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem); /* 20–24px */
+  --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem); /* 24–32px */
+  --font-size-2xl: clamp(2rem, 1.7rem + 1.2vw, 2.5rem); /* 32–40px */
+  --font-size-3xl: clamp(2.5rem, 2rem + 1.5vw, 3rem); /* 40–48px */
+  --font-size-4xl: clamp(3rem, 2.5rem + 1.75vw, 3.5rem); /* 48–56px */
+  --font-size-5xl: clamp(4rem, 3rem + 2vw, 4.5rem); /* 64–72px */
+  --font-size-6xl: clamp(5rem, 4rem + 2.5vw, 5.625rem); /* 80–90px */
+  --font-size-7xl: clamp(5.5rem, 4.5rem + 3vw, 9rem); /* 90–100px */
+
+  --line-height-base: 1.5;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xxs: calc(0.125rem + 0.1vw); /* ~2–4px */
+  --spacing-xs: calc(0.25rem + 0.2vw); /* ~4–8px */
+  --spacing-sm: calc(0.5rem + 0.3vw); /* ~8–12px */
+  --spacing-md: calc(1rem + 0.5vw); /* ~16–24px */
+  --spacing-lg: calc(1.5rem + 0.75vw); /* ~24–32px */
+  --spacing-xl: calc(2rem + 1vw); /* ~32–48px */
+  --spacing-2xl: calc(2.5rem + 1.25vw); /* ~40–56px */
+  --spacing-3xl: calc(3rem + 1.5vw); /* ~48–64px */
+  --spacing-4xl: calc(4rem + 1.75vw); /* ~64–80px */
+  --spacing-5xl: calc(5rem + 2vw); /* ~80–100px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Accessibility */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -62,6 +101,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-size: var(--font-size-body);
 }
 
 body h1:first-child {
@@ -101,28 +141,42 @@ a:hover {
 }
 
 h1 {
-  font-size: clamp(4rem, 4vw + 2rem, 6.5rem);
+  font-size: var(--font-size-7xl);
   font-family: var(--font-header);
 }
 
 h2 {
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.7rem);
+  font-size: var(--font-size-2xl);
   font-family: var(--font-subheading);
 }
 
 p {
   font-family: var(--font-body);
   font-size: clamp(0.9rem, 0.75vw + 0.75rem, 1.125rem);
+  font-size: var(--font-size-body);
 }
 
 li {
   font-family: var(--font-navbar);
+  font-size: 1.5rem;
+  font-size: var(--font-size-subtitle);
 }
 
 li img {
-  max-width: 100%;
+  width: 100%;
 }
 
+img {
+  width: 100%;
+}
+
+button {
+  background-color: transparent;
+}
+
+button:hover {
+  border-color: transparent;
+}
 /* Utilities */
 .flexAround {
   display: flex;
@@ -205,7 +259,11 @@ li img {
 }
 
 .gap-10 {
-  gap: 10px;
+  gap: 1rem;
+}
+
+.gap-20 {
+  gap: 2rem;
 }
 /* Transistion onto page onclick */
 .pageTransistion > * {
