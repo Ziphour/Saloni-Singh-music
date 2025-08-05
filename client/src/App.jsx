@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="Flow-4">
+      <div className="Screen-sizing Flow-4 beige-bg marginEven">
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
