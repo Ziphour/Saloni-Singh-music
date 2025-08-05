@@ -23,8 +23,8 @@ const HomePage = () => (
       </div>
     </section>
     {/* Promo */}
-    <section className="flexSpread">
-      <div>
+    <section className="flexSpread Screen- yellow-bg ">
+      <div className="sizing-2 marginEven">
         <p>
           Guess what just dropped, folks? I've got a shiny new song cover hot
           off the mic and ready to bless your ears! It's got the vibes, the
