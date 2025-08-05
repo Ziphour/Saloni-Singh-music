@@ -5,9 +5,9 @@ const HomePage = () => (
     {/* Hero */}
     <section className="hero noise Screen-sizing-2 flexAround marginEven">
       {/* written text */}
-      <div className="  textAlign">
+      <div className=" flow-1 textAlign">
         <h2 className="">THE IT GIRL</h2>
-        <h1 className="">SALONI</h1>
+        <h1 className="text-clr-white">SALONI</h1>
         <h2 className="">MUSIC OUT NOW </h2>
         <div>
           <a href="" alt="">
