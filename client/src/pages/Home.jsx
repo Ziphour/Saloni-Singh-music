@@ -15,12 +15,10 @@ const HomePage = () => (
           </a>
         </div>
       </div>
-      <div>
-        <img
-          src="/assets/Images/SaloniIMG.png"
-          alt="Image of the music artist Saloni"
-        />
-      </div>
+      <img
+        src="/assets/Images/SaloniIMG.png"
+        alt="Image of the music artist Saloni"
+      />
     </section>
     {/* Promo */}
     <section className="  yellow-bg ">

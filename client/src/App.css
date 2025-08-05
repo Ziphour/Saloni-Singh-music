@@ -280,8 +280,12 @@ button:hover {
   border-radius: 10px;
   background: var(--banner-bg);
   background: var(--banner-bg-gradient);
+  padding-top: 50px;
 }
 
+.hero img {
+  width: clamp(1rem, 40%, 34.5rem);
+}
 .contactForm {
 }
 
