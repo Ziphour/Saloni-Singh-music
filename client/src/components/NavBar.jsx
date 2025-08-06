@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <>
-      <nav className="marginLeft flexAround">
+      <nav className="marginLeft  flexAround">
         <ul className="flexAround gap-20">
           <li>Home</li>
           <li>My story</li>
