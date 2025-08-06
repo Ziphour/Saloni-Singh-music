@@ -267,8 +267,8 @@ button:hover {
   gap: 2rem;
 }
 
-.gap-30 {
-  gap: 3rem;
+.gap-50 {
+  gap: 5rem;
 }
 /* Transistion onto page onclick */
 .pageTransistion > * {
@@ -321,8 +321,7 @@ button:hover {
 .StarBG {
   background: url(../public/assets/Images/StarBG.png);
   mix-blend-mode: soft-light;
-  background-repeat: repeat;
-  opacity: 0.9;
+  background-repeat: no-repeat;
 }
 
 /* !It is NOT rounding correctly */

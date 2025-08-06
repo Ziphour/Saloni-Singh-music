@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="marginLeft  flexAround">
-        <ul className="flexAround gap-30">
+        <ul className="flexAround gap-50">
           <li>Home</li>
           <li>My story</li>
           <li>Work with me</li>
