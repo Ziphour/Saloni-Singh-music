@@ -276,12 +276,13 @@ button:hover {
 }
 /* block */
 
+/* ! Change this name, it doesnt represent what we need */
 .hero {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  /*? overflow: hidden; */
   height: 100%;
-  /* border radius needs utility instead */
+  /*! border radius needs utility instead */
   border-radius: 10px;
 }
 
@@ -289,6 +290,7 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 10px;
 
   width: 100%;
   height: 100%;
@@ -301,6 +303,7 @@ button:hover {
   position: relative;
   z-index: 1;
   padding-top: 125px;
+  border-radius: 10px;
 }
 
 .heroGradientBG {
@@ -308,15 +311,23 @@ button:hover {
   background: var(--banner-bg-gradient);
   /* mix-blend-mode: soft-light; */
   opacity: 1;
+  border-radius: 10px;
 }
 
-.heroStarBG {
+.StarBG {
   background: url(../public/assets/Images/StarBG.png);
   mix-blend-mode: soft-light;
+  background-repeat: repeat;
   opacity: 0.9;
 }
 
-.heroNoiseBG {
+/* !It is NOT rounding correctly */
+.NoiseBG {
+  background: url(../public/assets/Images/noise2.png);
+  opacity: 0.075;
+  background-repeat: repeat;
+  /* ! teMP fix */
+  border-radius: 10px;
 }
 
 .heroContent img {

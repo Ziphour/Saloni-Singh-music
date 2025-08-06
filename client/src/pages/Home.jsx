@@ -3,12 +3,11 @@
 const HomePage = () => (
   <div className="flow-4">
     {/* Hero */}
-    <section className="hero Screen-sizing-2 marginEven">
+    <section className="hero  Screen-sizing-2 marginEven">
       {/* written text */}
       <div className="bg-layer heroGradientBG"></div>
-      <div className="bg-layer heroStarBG "></div>
-      <div className="bg-layer heroStarBG "></div>
-
+      <div className="bg-layer StarBG "></div>
+      <div className="bg-layer NoiseBG "></div>
       <div className="flexAround heroContent">
         <div className=" flow-1 textAlign">
           <h2 className="">THE IT GIRL</h2>
