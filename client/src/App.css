@@ -266,6 +266,10 @@ button:hover {
 .gap-20 {
   gap: 2rem;
 }
+
+.gap-30 {
+  gap: 3rem;
+}
 /* Transistion onto page onclick */
 .pageTransistion > * {
   transition:;
