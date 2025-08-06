@@ -277,23 +277,59 @@ button:hover {
 /* block */
 
 .hero {
-  max-width: (100vw - 4rem);
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  /* border radius needs utility instead */
   border-radius: 10px;
-  background: var(--banner-bg);
-  background: var(--banner-bg-gradient);
-  padding-top: 100px;
 }
 
-.hero img {
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none; /* prevent interference with interaction */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding-top: 125px;
+}
+
+.heroGradientBG {
+  background: var(--banner-bg);
+  background: var(--banner-bg-gradient);
+  /* mix-blend-mode: soft-light; */
+  opacity: 1;
+}
+
+.heroStarBG {
+  background: url(../public/assets/Images/StarBG.png);
+  mix-blend-mode: soft-light;
+  opacity: 0.9;
+}
+
+.heroNoiseBG {
+}
+
+.heroContent img {
+  position: relative;
   width: clamp(1rem, 40%, 34.5rem);
 }
 
-.hero > div {
+.heroContent > div {
   position: relative;
-  bottom: 45px;
+  bottom: 60px;
 }
-.contactForm {
-}
+
+/*  */
 
 .footer {
   background: #000;

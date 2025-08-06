@@ -3,22 +3,28 @@
 const HomePage = () => (
   <div className="flow-4">
     {/* Hero */}
-    <section className="hero noise Screen-sizing-2 flexAround marginEven">
+    <section className="hero Screen-sizing-2 marginEven">
       {/* written text */}
-      <div className=" flow-1 textAlign">
-        <h2 className="">THE IT GIRL</h2>
-        <h1 className="text-clr-white">SALONI</h1>
-        <h2 className="">MUSIC OUT NOW </h2>
-        <div>
-          <a href="" alt="">
-            <button className="marginEven">Stream Here</button>
-          </a>
+      <div className="bg-layer heroGradientBG"></div>
+      <div className="bg-layer heroStarBG "></div>
+      <div className="bg-layer heroStarBG "></div>
+
+      <div className="flexAround heroContent">
+        <div className=" flow-1 textAlign">
+          <h2 className="">THE IT GIRL</h2>
+          <h1 className="text-clr-white">SALONI</h1>
+          <h2 className="">MUSIC OUT NOW </h2>
+          <div>
+            <a href="" alt="">
+              <button className="marginEven">Stream Here</button>
+            </a>
+          </div>
         </div>
+        <img
+          src="/assets/Images/SaloniIMG.png"
+          alt="Image of the music artist Saloni"
+        />
       </div>
-      <img
-        src="/assets/Images/SaloniIMG.png"
-        alt="Image of the music artist Saloni"
-      />
     </section>
     {/* Promo */}
     <section className="  yellow-bg ">
