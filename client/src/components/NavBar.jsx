@@ -1,11 +1,19 @@
+import { Link } from "react-router";
+
 const Navbar = () => {
   return (
     <>
       <nav className="Screen-sizing-2 marginEven flex flexSpread nav ">
         <ul className="flex gap-50">
-          <li>Home</li>
-          <li>My story</li>
-          <li>Work with me</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/About">My World</Link>
+          </li>
+          <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
         </ul>
         {/* apply relative on here and then
           push it all the way to the left, look it up online if needed */}
