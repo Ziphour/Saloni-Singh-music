@@ -172,23 +172,39 @@ img {
 }
 
 button {
-  background-color: transparent;
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
 }
 
 button:hover {
   border-color: transparent;
 }
 /* Utilities */
-.flexAround {
+.flex {
   display: flex;
+}
+
+.flexAround {
   justify-content: space-around;
   align-items: center;
 }
 
 .flexSpread {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+}
+
+.right-position {
+  position: absolute;
+  right: 0;
 }
 
 .Screen-sizing {
@@ -196,7 +212,7 @@ button:hover {
 }
 
 .Screen-sizing-2 {
-  max-width: 90%;
+  max-width: calc(100% - 8rem);
 }
 
 .hoverExpand {
@@ -238,17 +254,23 @@ button:hover {
   background: var(--banner-bg-colour-2);
 }
 
+nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
 .noise {
   opacity: 1;
   background-image: url(assets/Images/Noise.png);
 }
 
 .marginLeft {
-  margin-left: 25rem;
+  margin-left: auto;
 }
 
 .marginEven {
-  margin: auto;
+  margin: 0 auto;
 }
 
 .marginEvenChildren > * {
@@ -270,9 +292,13 @@ button:hover {
 .gap-50 {
   gap: 5rem;
 }
+
+.gap-100 {
+  gap: 10rem;
+}
 /* Transistion onto page onclick */
 .pageTransistion > * {
-  transition:;
+  /* transition:; */
 }
 
 .text-clr-white {

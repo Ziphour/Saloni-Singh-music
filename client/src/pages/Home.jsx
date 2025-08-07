@@ -8,7 +8,7 @@ const HomePage = () => (
       <div className="bg-layer heroGradientBG"></div>
       <div className="bg-layer StarBG "></div>
       <div className="bg-layer NoiseBG "></div>
-      <div className="flexAround heroContent">
+      <div className="flex flexAround heroContent">
         <div className=" flow-1 textAlign">
           <h2 className="">THE IT GIRL</h2>
           <h1 className="text-clr-white">SALONI</h1>
@@ -27,7 +27,7 @@ const HomePage = () => (
     </section>
     {/* Promo */}
     <section className="  yellow-bg ">
-      <div className="Screen-sizing-2 marginEven flexSpread ">
+      <div className="flex Screen-sizing-2 marginEven flexSpread ">
         <div className="">
           <p>
             Guess what just dropped, folks? I've got a shiny new song cover hot
