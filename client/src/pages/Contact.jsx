@@ -3,11 +3,9 @@ import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
-    <div>
-      <section className="">
-        <ContactForm />
-      </section>
-      <section>{/* Place where all URLs/Social media acc are shown */}</section>
+    <div className="flow-2">
+      <ContactForm />
+      <section></section>
     </div>
   );
 };

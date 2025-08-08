@@ -208,7 +208,6 @@ button:hover {
 
 .grid-3 {
   grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  align-items: center;
 }
 
 .span-1 {
@@ -230,6 +229,10 @@ button:hover {
 
 .Screen-sizing-2 {
   max-width: calc(100% - 8rem);
+}
+
+.Screen-sizing-3 {
+  max-width: calc(100% - 25rem);
 }
 
 .hoverExpand {
@@ -326,6 +329,19 @@ nav {
   border-radius: 10px;
 }
 /* block */
+
+.ContactForm {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.ContactForm img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
 
 /* ! Change this name, it doesnt represent what we need */
 .hero {

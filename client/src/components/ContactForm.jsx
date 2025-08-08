@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
@@ -9,7 +9,7 @@ const ContactForm = () => {
   const [status, setStatus] = useState("");
 
   useEffect(() => {
-    emailjs.init(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+    emailjs.init(import.meta.env.VITE_REACT_APP_EMAILJS_PUBLIC_KEY);
   }, []);
 
   const sendEmail = async (e) => {
@@ -19,17 +19,17 @@ const ContactForm = () => {
     try {
       setStatus("Sending");
       const emailJsResponse = await emailjs.send(
-        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_REACT_APP_EMAILJS_TEMPLATE_ID,
         {
           user_name: name,
           user_email: email,
           message: message,
           //   subject: subject, include later once email JS is understood
-        },
+        }
       );
       console.log(
-        `EmailJS results are ${emailJsResponse.status + "" + emailJsResponse.text}`,
+        `EmailJS results are ${emailJsResponse.status + "" + emailJsResponse.text}`
       );
       setStatus("Sent");
       setEmail("");
@@ -43,45 +43,54 @@ const ContactForm = () => {
   };
   return (
     <>
-      <form onSubmit={sendEmail}>
-        <div>
-          <label></label>
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            type="text"
-          />
+      <section className="marginEven Screen-sizing-3 grid grid-3 gap-20 ContactForm ">
+        <div className="span-1">
+          <img src="/assets/Images/mic.png" alt="Microphone in a theatre" />
         </div>
-        <div>
-          <label></label>
-          <input
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            type="email"
-          />
-        </div>
-        <div>
-          <label></label>
-          <input
-            value={subject}
-            onChange={(e) => setSubject(e.target.value)}
-            type="text"
-          />
-        </div>
-        <div>
-          <label></label>
-          <input
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            type="text"
-          />
-        </div>
-        <button disabled={status === "sending"}></button>
-        {status == "sent" && (
-          <p style={{ color: "green" }}>Success, you will be contacted soon</p>
-        )}
-        {status == "error" && <p style={{ color: "red" }}>error, try again</p>}
-      </form>
+        <form className="span-2" onSubmit={sendEmail}>
+          <div>
+            <label></label>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+            />
+          </div>
+          <div>
+            <label></label>
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              type="email"
+            />
+          </div>
+          <div>
+            <label></label>
+            <input
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              type="text"
+            />
+          </div>
+          <div>
+            <label></label>
+            <input
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              type="text"
+            />
+          </div>
+          <button disabled={status === "sending"}></button>
+          {status == "sent" && (
+            <p style={{ color: "green" }}>
+              Success, you will be contacted soon
+            </p>
+          )}
+          {status == "error" && (
+            <p style={{ color: "red" }}>error, try again</p>
+          )}
+        </form>
+      </section>
     </>
   );
 };

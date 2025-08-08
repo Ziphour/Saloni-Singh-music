@@ -5,7 +5,7 @@ const About = () => {
   return (
     // Flow?
     <div className="flow-2">
-      <section className="Screen-sizing-2 marginEven">
+      <section className="Screen-sizing-3 marginEven">
         <div className="grid grid-3">
           <div className="span-1">
             <img

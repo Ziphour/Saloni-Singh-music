@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div className=" hero Screen-sizing beige-bg marginEven">
         <div className="bg-layer NoiseBG "></div>
-        <div className="flow-1">
+        <div className="flow-2">
           <Navbar />
           <Routes>
             <Route path="/" element={<HomePage />} />
