@@ -12,7 +12,9 @@ const HomePage = () => (
         <div className=" flow-1 textAlign">
           <h2 className="">THE IT GIRL</h2>
           <h1 className="text-clr-white">SALONI</h1>
-          <h2 className="">MUSIC OUT NOW </h2>
+          <h2 className="">
+            MUSIC OUT NOW <span>&lt;</span>3
+          </h2>
           <div>
             <a href="" alt="">
               <button className="marginEven">Stream Here</button>

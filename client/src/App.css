@@ -102,7 +102,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-xs);
 }
 
 body h1:first-child {
@@ -130,7 +130,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  line-height: var(--spacing-2xl);
+  line-height: var(--spacing-xl);
 }
 
 a {
@@ -200,6 +200,23 @@ button:hover {
 .flexSpread {
   justify-content: center;
   align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  align-items: center;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
 }
 
 .right-position {
@@ -304,6 +321,10 @@ nav {
 .text-clr-white {
   color: white;
 }
+
+.border-radius-10 {
+  border-radius: 10px;
+}
 /* block */
 
 /* ! Change this name, it doesnt represent what we need */
@@ -345,9 +366,10 @@ nav {
 }
 
 .StarBG {
-  background: url(../public/assets/Images/StarBG.png);
+  background: url(../public/assets/Images/StarBG3.png);
+  background-repeat: repeat;
   mix-blend-mode: soft-light;
-  background-repeat: no-repeat;
+  /* opacity: 2.2; */
 }
 
 /* !It is NOT rounding correctly */
@@ -369,15 +391,29 @@ nav {
   bottom: 60px;
 }
 
-.swiper-container .swiper-pagination .swiper-pagination-bullet {
-  width: 22px;
-  height: 22px;
-  background-color: white;
-  margin: 0;
-  margin-right: 25px;
-  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
-  bottom: 15px;
-  margin-top: 53px;
+.swiper {
+  width: 600px; /* set fixed width or 100% for full width */
+  height: 400px; /* set fixed height or let images define it */
+  border-radius: 10px; /* rounded corners */
+  overflow: hidden; /* hide overflow from slides */
+  background-color: #000; /* optional background */
+
+  margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 4px;
+  transition: background 0.3s;
+  border-radius: 50%;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #dc722b; /* highlight color */
 }
 
 /*  */
