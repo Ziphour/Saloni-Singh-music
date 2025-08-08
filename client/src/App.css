@@ -119,7 +119,7 @@ p,
 body {
   font-family: var(--font-body), serif;
   /* Font is next big thing */
-  font-size: 1.125rem;
+  font-size: var(--font-size-md);
   font-optical-sizing: auto;
   font-weight: 300;
   color: #000000;
@@ -130,6 +130,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: var(--spacing-2xl);
 }
 
 a {
@@ -153,8 +154,7 @@ h2 {
 
 p {
   font-family: var(--font-body);
-  font-size: clamp(0.9rem, 0.75vw + 0.75rem, 1.125rem);
-  font-size: var(--font-size-body);
+  font-size: clamp(0.2rem, var(--font-size-sm), 1.125rem);
 }
 
 li {
@@ -367,6 +367,17 @@ nav {
 .heroContent > div {
   position: relative;
   bottom: 60px;
+}
+
+.swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 22px;
+  height: 22px;
+  background-color: white;
+  margin: 0;
+  margin-right: 25px;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.16);
+  bottom: 15px;
+  margin-top: 53px;
 }
 
 /*  */
