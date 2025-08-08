@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <div className=" hero Screen-sizing beige-bg marginEven">
-        <div className="bg-layer  NoiseBG "></div>
+        <div className="bg-layer NoiseBG "></div>
         <div className="flow-1">
           <Navbar />
           <Routes>

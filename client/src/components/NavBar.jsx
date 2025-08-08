@@ -17,7 +17,7 @@ const Navbar = () => {
         </ul>
         {/* apply relative on here and then
           push it all the way to the left, look it up online if needed */}
-        <ul className="flex right-position">
+        <ul className="flex  right-position">
           <li>
             <button>
               <img src="/assets/Icons/Instagram.png" alt="Instagram Icon" />

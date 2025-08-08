@@ -5,9 +5,12 @@ const About = () => {
   return (
     // Flow?
     <div className="">
-      <div className="flexAround">
+      <div className="flex flexAround">
         <div>
-          <img src="" alt="Image of the artist Saloni Singh" />
+          <img
+            src="/assets/Images/polaroidFrame.png"
+            alt="Image of the artist Saloni Singh"
+          />
         </div>
         <p>
           Hey, I’m Saloni Singh — a pop artist with glitter in my veins and a
