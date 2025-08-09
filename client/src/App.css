@@ -160,7 +160,7 @@ p {
 li {
   font-family: var(--font-navbar);
   font-size: 1.5rem;
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-lg);
 }
 
 li img {
