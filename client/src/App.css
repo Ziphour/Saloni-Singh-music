@@ -23,9 +23,10 @@
   /* background */
   --banner-bg-gradient: linear-gradient(
     161deg,
-    rgba(97, 123, 144, 1) 0%,
-    rgba(137, 189, 229, 1) 41%,
-    rgba(244, 248, 249, 1) 89%
+    hsl(213, 28%, 41%) 0%,
+    hsl(208.89deg 26.73% 60.39%) 20%,
+    hsl(209, 49%, 73%) 41%,
+    hsl(0, 0%, 100%) 89%
   );
   /* Need to change the blues to the PS version banner colours */
   --banner-bg-colour-2: #faeeb1;
