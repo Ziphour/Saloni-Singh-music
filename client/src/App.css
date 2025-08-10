@@ -190,6 +190,20 @@ button:hover {
   border-color: transparent;
 }
 /* Utilities */
+.float {
+  display: flow-root;
+}
+
+.float-right {
+  float: right;
+  /* shape-margin: 5rem; */
+  shape-outside: ellipse(
+    33.33% 46.04% at 213px 134px
+  ); /* shape-outside: url(assets/Images/CD.png); */
+  width: 40%;
+  margin-left: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -365,6 +379,10 @@ nav {
   height: 100%;
   /*! border radius needs utility instead */
   border-radius: 10px;
+}
+
+.CD {
+  padding: 50px 0;
 }
 
 .bg-layer {

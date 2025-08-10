@@ -30,20 +30,20 @@ const HomePage = () => (
       </div>
     </section>
     {/* Promo */}
-    <section className="  yellow-bg ">
-      <article className="flex Screen-sizing-2 marginEven flexSpread ">
+    <section className=" CD yellow-bg ">
+      <article className=" Screen-sizing-2 marginEven float gap-10 ">
         <div className="">
+          <img className="float-right" src="./assets/Images/CD.png" />
+
           <p>
             Guess what just dropped, folks? I've got a shiny new song cover hot
             off the mic and ready to bless your ears! It's got the vibes, the
             feels, and just the right sprinkle of magic to make you hit replay
             (like...a lot). Whether you're singing along in the shower or
             jamming out in traffic, this one’s for you. Go check it out, turn it
-            up, and let the music do its thing For you
+            up, and let the music do its thing For you Go check it out, turn it
+            up, and let the music do its thing For you Go check it out, turn it.
           </p>
-        </div>
-        <div>
-          <img src="./assets/Images/CD.png" />
         </div>
       </article>
     </section>
