@@ -11,9 +11,9 @@ const HomePage = () => (
       <div className="flex flexAround heroContent">
         <div className="flow-2 textAlign">
           <div className=" flow-1 ">
-            <h2 className="lightgrey-txt">THE IT GIRL</h2>
-            <h1 className="text-clr-white">SALONI</h1>
-            <h2 className="lightgrey-txt">
+            <h2 className="lightgrey-txt font-Stretch">THE IT GIRL</h2>
+            <h1 className="text-clr-white font-Stretch">SALONI</h1>
+            <h2 className="lightgrey-txt font-Stretch">
               MUSIC OUT NOW <span>&lt;</span>3
             </h2>
           </div>

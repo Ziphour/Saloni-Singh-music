@@ -339,7 +339,11 @@ nav {
 }
 
 .text-clr-white {
-  color: white;
+  color: #ffffffcf;
+}
+
+.font-Stretch {
+  transform: scaleY(1.125);
 }
 
 .border-radius-10 {
