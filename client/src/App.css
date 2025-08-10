@@ -383,7 +383,7 @@ nav {
 .heroContent {
   position: relative;
   z-index: 1;
-  padding-top: 125px;
+  padding-top: 100px;
   border-radius: 10px;
 }
 
@@ -422,13 +422,13 @@ nav {
 
 .heroContent img {
   position: relative;
-  width: clamp(1rem, 40%, 34.5rem);
+  width: clamp(1rem, 43%, 35rem);
 }
 
 .heroContent > div {
   position: relative;
-  bottom: 60px;
-  left: 20px;
+  bottom: 45px;
+  left: 32px;
 }
 
 .swiper {
