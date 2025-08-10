@@ -145,11 +145,13 @@ a:hover {
 h1 {
   font-size: var(--font-size-8xl);
   font-family: var(--font-header);
+  color: #ffffff5d;
 }
 
 h2 {
   font-size: var(--font-size-xl);
   font-family: var(--font-subheading);
+  letter-spacing: 2px;
 }
 
 p {
@@ -224,11 +226,11 @@ button:hover {
 }
 
 .Screen-sizing {
-  max-width: calc(70vw);
+  max-width: calc(60vw);
 }
 
 .Screen-sizing-2 {
-  max-width: calc(100% - 8rem);
+  max-width: calc(100% - 4rem);
 }
 
 .Screen-sizing-3 {
@@ -246,7 +248,7 @@ button:hover {
 }
 
 .flow-1 > * + * {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .flow-2 > * + * {
@@ -343,6 +345,18 @@ nav {
   border-radius: 10px 0 0 10px;
 }
 
+.padding-10 {
+  /* padding: 22%; */
+}
+
+.white-txt {
+  color: white;
+}
+
+.lightgrey-txt {
+  color: #5a5a5a;
+}
+
 /* ! Change this name, it doesnt represent what we need */
 .hero {
   position: relative;
@@ -383,8 +397,10 @@ nav {
 
 .StarBG {
   background: url(../public/assets/Images/StarBG3.png);
-  background-repeat: repeat;
   mix-blend-mode: soft-light;
+  background-size: auto;
+  pointer-events: none; /* prevent interference with interaction */
+
   /* opacity: 2.2; */
 }
 
@@ -397,6 +413,13 @@ nav {
   border-radius: 10px;
 }
 
+.button-bg-paint {
+  background: url(../public/assets/Images/paint.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .heroContent img {
   position: relative;
   width: clamp(1rem, 40%, 34.5rem);
@@ -405,6 +428,7 @@ nav {
 .heroContent > div {
   position: relative;
   bottom: 60px;
+  left: 20px;
 }
 
 .swiper {
