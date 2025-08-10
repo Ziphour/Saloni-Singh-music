@@ -6,15 +6,19 @@
   font-weight: medium;
 }
 @font-face {
-  font-family: "Kisah Horor Sobat";
-  src: url(../public/assets/Fonts/KisahHororSobat.ttf) format("truetype");
-}
-
-@font-face {
   font-family: "Veteran TypeWriter";
   src: url(../public/assets/Fonts/veterantypewriter.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: "Kuashe";
+  src: url(../public/assets/Fonts/Kuashe-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kuashe";
+  src: url(../public/assets/Fonts/Kuashe-Regular.otf) format("opentype");
+}
 :root {
   --main-bg-colour: #e6ccb6;
 
@@ -41,10 +45,10 @@
 
   --flow-1: 2rem;
 
-  --font-header: "Kisah Horor Sobat";
+  --font-header: "Kuashe";
   --font-subheading: "Azurite";
   --font-body: "Merriweather";
-  --font-marker: "Permanent Marker";
+  --font-marker: "";
   --font-navbar: "Veteran Typewriter";
 
   --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12–14px */
@@ -148,6 +152,7 @@ a:hover {
 h1 {
   font-size: var(--font-size-8xl);
   font-family: var(--font-header);
+  font-weight: 900;
   color: #ffffff5d;
 }
 
