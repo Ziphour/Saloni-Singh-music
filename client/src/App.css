@@ -22,10 +22,12 @@
   --banner-bg: #617b90;
   /* background */
   --banner-bg-gradient: linear-gradient(
-    161deg,
-    hsl(213, 28%, 41%) 0%,
+    166deg,
+    hsl(213, 24%, 55%) 0%,
     hsl(208.89deg 26.73% 60.39%) 20%,
-    hsl(209, 49%, 73%) 41%,
+    hsl(209, 49%, 68%) 40%,
+
+    hsl(209, 49%, 73%) 61%,
     hsl(0, 0%, 100%) 89%
   );
   /* Need to change the blues to the PS version banner colours */
@@ -343,7 +345,7 @@ nav {
 }
 
 .font-Stretch {
-  transform: scaleY(1.125);
+  transform: scaleY(1.15);
 }
 
 .border-radius-10 {
