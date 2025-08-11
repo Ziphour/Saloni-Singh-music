@@ -19,8 +19,10 @@ const About = () => {
             love for making music that makes people *feel*. I grew up in the
             heart of Miami, where the sounds of dance beats and soulful melodies
             were always in the air. From the time I could walk, I was putting on
-            shows in the living room, stealing my mom’s hairbrush to use as a
-            mic, and dreaming of singing to crowds
+            shows in the living room, dreaming of singing to crowds, wanting and
+            willing to be the best pop star. I'd start out recording covers and
+            learning melodies and the best way to work my vocal chords. It was
+            my first instrument and guidance.
           </p>
         </div>
         <p>
