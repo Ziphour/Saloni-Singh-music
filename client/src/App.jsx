@@ -1,24 +1,25 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
 import About from "./pages/About";
-import Music from "./pages/Music";
-import Sidebar from "./components/Sidebar";
-import MainContent from "./pages/maincontent";
-import RightPanel from "./components/Rightpanel";
 import Contact from "./pages/Contact";
+import Navbar from "./components/NavBar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
   return (
     <Router>
-      <div className="container">
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<MainContent />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/music" element={<Music />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <RightPanel />
+      <div className=" hero Screen-sizing beige-bg marginEven">
+        <div className="bg-layer NoiseBG "></div>
+        <div className="flow-2">
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/About" element={<About />} />
+            <Route path="/Contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </div>
       </div>
     </Router>
   );

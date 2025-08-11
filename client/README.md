@@ -18,4 +18,6 @@ Currently, two official plugins are available:
     1. Test darker shades
     2. Look up what shades work with white and pink
 3. Check and if more edits are needed update here
+
+4. Icons , audio displays
     

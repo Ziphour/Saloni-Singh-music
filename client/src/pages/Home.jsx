@@ -1,0 +1,53 @@
+// MainContent.jsx
+
+const HomePage = () => (
+  <div className="flow-4">
+    {/* Hero */}
+    <section className="hero  Screen-sizing-2 marginEven">
+      {/* written text */}
+      <div className="bg-layer heroGradientBG"></div>
+      <div className="bg-layer StarBG "></div>
+      <div className="bg-layer NoiseBG "></div>
+      <div className="flex flexAround heroContent">
+        <div className="flow-2 textAlign">
+          <div className=" flow-1 ">
+            <h2 className="lightgrey-txt font-Stretch">THE IT GIRL</h2>
+            <h1 className="text-clr-white font-Stretch">SALONI</h1>
+            <h2 className="lightgrey-txt font-Stretch">
+              MUSIC OUT NOW <span>&lt;</span>3
+            </h2>
+          </div>
+          <div className="">
+            <a href="" className="button-bg-paint padding-10" alt="">
+              <button className="marginEven white-txt">Stream Here</button>
+            </a>
+          </div>
+        </div>
+        <img
+          src="/assets/Images/SaloniIMG.png"
+          alt="Image of the music artist Saloni"
+        />
+      </div>
+    </section>
+    {/* Promo */}
+    <section className=" CD yellow-bg ">
+      <article className=" Screen-sizing-2 marginEven float  ">
+        <div className="">
+          <img className="float-right" src="./assets/Images/CD.png" />
+
+          <p>
+            Guess what just dropped, folks? I've got a shiny new song cover hot
+            off the mic and ready to bless your ears! It's got the vibes, the
+            feels, and just the right sprinkle of magic to make you hit replay
+            (like...a lot). Whether you're singing along in the shower or
+            jamming out in traffic, this one’s for you. Go check it out, turn it
+            up, and let the music do its thing For you Go check it out, turn it
+            up, and let the musicsian do it
+          </p>
+        </div>
+      </article>
+    </section>
+  </div>
+);
+
+export default HomePage;

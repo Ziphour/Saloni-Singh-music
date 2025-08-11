@@ -1,51 +1,143 @@
 /* Global styles */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: "Azurite";
+  src: url(../public/assets/Fonts/Azurite-2.ttf) format("truetype");
+  font-weight: medium;
+}
+@font-face {
+  font-family: "Veteran TypeWriter";
+  src: url(../public/assets/Fonts/veterantypewriter.ttf) format("truetype");
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+@font-face {
+  font-family: "Kuashe";
+  src: url(../public/assets/Fonts/Kuashe-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Kuashe";
+  src: url(../public/assets/Fonts/Kuashe-Regular.otf) format("opentype");
+}
+:root {
+  --main-bg-colour: #e6ccb6;
+
+  /* background */
+  --banner-bg: #617b90;
+  /* background */
+  --banner-bg-gradient: linear-gradient(
+    166deg,
+    hsl(213, 24%, 55%) 0%,
+    hsl(208.89deg 26.73% 60.39%) 20%,
+    hsl(209, 49%, 68%) 40%,
+
+    hsl(209, 49%, 73%) 61%,
+    hsl(0, 0%, 100%) 89%
+  );
+  /* Need to change the blues to the PS version banner colours */
+  --banner-bg-colour-2: #faeeb1;
+
+  /* svg required */
+
+  --nav-colour-1: #6a5d56;
+  --nav-colour-2: #e6ccb6;
+  --body-colour: black;
+
+  --flow-1: 2rem;
+
+  --font-header: "Kuashe";
+  --font-subheading: "Azurite";
+  --font-body: "Merriweather";
+  --font-marker: "";
+  --font-navbar: "Veteran TypeWriter";
+
+  --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12–14px */
+  --font-size-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem); /* 14–16px */
+  --font-size-md: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); /* 16–20px */
+  --font-size-lg: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem); /* 20–24px */
+  --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem); /* 24–32px */
+  --font-size-2xl: clamp(2rem, 1.7rem + 1.2vw, 2.5rem); /* 32–40px */
+  --font-size-3xl: clamp(2.5rem, 2rem + 1.5vw, 3rem); /* 40–48px */
+  --font-size-4xl: clamp(3rem, 2.5rem + 1.75vw, 3.5rem); /* 48–56px */
+  --font-size-5xl: clamp(4rem, 3rem + 2vw, 4.5rem); /* 64–72px */
+  --font-size-6xl: clamp(5rem, 4rem + 2.5vw, 5.625rem); /* 80–90px */
+  --font-size-7xl: clamp(5.5rem, 4.5rem + 3vw, 9rem); /* 90–100px */
+  --font-size-8xl: clamp(5.5rem, 5rem + 3.5vw, 10rem); /* 90–100px */
+
+  --line-height-base: 1.5;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-xxs: calc(0.125rem + 0.1vw); /* ~2–4px */
+  --spacing-xs: calc(0.25rem + 0.2vw); /* ~4–8px */
+  --spacing-sm: calc(0.5rem + 0.3vw); /* ~8–12px */
+  --spacing-md: calc(1rem + 0.5vw); /* ~16–24px */
+  --spacing-lg: calc(1.5rem + 0.75vw); /* ~24–32px */
+  --spacing-xl: calc(2rem + 1vw); /* ~32–48px */
+  --spacing-2xl: calc(2.5rem + 1.25vw); /* ~40–56px */
+  --spacing-3xl: calc(3rem + 1.5vw); /* ~48–64px */
+  --spacing-4xl: calc(4rem + 1.75vw); /* ~64–80px */
+  --spacing-5xl: calc(5rem + 2vw); /* ~80–100px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Accessibility */
+  scroll-behavior: smooth;
+}
 
 * {
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-
-}
-
-html, body {
   margin: 0;
   padding: 0;
-      overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: var(--font-size-xs);
 }
 
 body h1:first-child {
   margin-top: 0;
 }
 
-h1, h2, p, … {
+h1,
+h2,
+p,
+… {
   margin-top: 0;
 }
 
-
 body {
-  font-family: "Oswald", serif;
+  font-family: var(--font-body), serif;
   /* Font is next big thing */
-  font-size: 1.125rem;
+  font-size: var(--font-size-md);
   font-optical-sizing: auto;
   font-weight: 300;
   color: #000000;
-  background-color: #e9ddd1 ;
+  background-color: #e9ddd1;
   /* dfd3c9 */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: var(--spacing-xl);
 }
 
 a {
@@ -58,56 +150,119 @@ a:hover {
 }
 
 h1 {
-  font-size: clamp(4rem, 4vw + 2rem, 6.5rem);
+  font-size: var(--font-size-8xl);
+  font-family: var(--font-header);
+  font-weight: 900;
+  color: #ffffff5d;
 }
 
 h2 {
-  font-size: clamp(1rem, 1vw + 0.5rem, 1.7rem);
-}
-
-h1,
-h2,
-h3 {
-  font-family: "PT Sans Narrow", serif;
-  font-weight: 600;
-  font-style: normal;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-subheading);
+  letter-spacing: 2px;
 }
 
 p {
-  font-size: clamp(0.9rem, 0.75vw + 0.75rem, 1.125rem);
+  font-family: var(--font-body);
+  font-size: clamp(0.2rem, var(--font-size-sm), 1.125rem);
+}
+
+li {
+  font-family: var(--font-navbar);
+  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
+}
+
+li img {
+  width: 100%;
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
-/* Wrapper for player for centering */
-.player-wrapper {
-  /* max-width: 600px; Adjust the width */
-  /* margin: 0 auto;
-  padding: 20px; */
-  color: white;
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
 }
 
+button:hover {
+  border-color: transparent;
+}
 /* Utilities */
+.float {
+  display: flow-root;
+}
+
+.float-right {
+  float: right;
+  /* shape-margin: 5rem; */
+  shape-outside: ellipse(
+    33.33% 46.04% at 213px 134px
+  ); /* shape-outside: url(assets/Images/CD.png); */
+  width: 40%;
+  margin-left: 10rem;
+}
+
 .flex {
   display: flex;
+}
+
+.flexAround {
   justify-content: space-around;
   align-items: center;
 }
 
-.min-width {
-  min-width: 100px;
+.flexSpread {
+  justify-content: center;
+  align-items: center;
 }
 
-.middle {
-  margin: 1em auto;
+.flexdown {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.iconlist {
-  align-self: center;
-  gap: 20px;
-  width: clamp(4em, 8vw + 4rem, 14rem);
+.grid {
+  display: grid;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.right-position {
+  position: absolute;
+  right: 0;
+}
+
+.Screen-sizing {
+  max-width: calc(60vw);
+}
+
+.Screen-sizing-2 {
+  max-width: calc(100% - 4rem);
+}
+
+.Screen-sizing-3 {
+  max-width: calc(100% - 15rem);
 }
 
 .hoverExpand {
@@ -120,409 +275,387 @@ img {
   transform: scale(1.1);
 }
 
-.padding-2 {
-  padding-left: 15px;
-  padding-right: 15px;
+.flow-1 > * + * {
+  margin-top: 1.5rem;
 }
 
-/* Container for the app layout */
-.container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 5fr;
-  width: 78vw;
-  padding: 0;
-  margin: 0;
-  margin-top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  /* border-radius: 10px; */
-}
-
-.contact-form {
-  background: #ffffff; /* Soft white background */
-  padding: 25px;
-  border-radius: 10px; /* Slightly rounded corners */
-  box-shadow: none; /* Remove strong shadow to keep the form subtle */
-  width: 100%;
-  color: #333; /* Dark text for contrast */
-  transition: all 0.3s ease-in-out;
-  border: 1px solid #e0e0e0; /* Light border for a clean look */
-}
-
-/* Form Title */
-.contact-form h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  color: #333; /* Darker title text */
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-/* Form Fields */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px 10px;
-  margin: 10px 0;
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 8px;
-  background-color: #f9f9f9; /* Soft background for fields */
-  font-size: 1rem;
-  color: #555; /* Slightly lighter text */
-  transition: all 0.3s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #ce9797; /* Blue focus border */
-  background-color: #ffffff; /* White background on focus */
-  outline: none;
-}
-
-/* Submit Button */
-.contact-form button {
-  width: 100%;
-  padding: 12px;
-  background-color: #000000; /* Calming blue */
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: none;
-}
-
-.contact-form button:hover {
-  background-color: #ce9797; /* Slightly darker blue on hover */
-}
-
-/* Textarea for message */
-.contact-form textarea {
-  height: 150px;
-  resize: none;
-}
-
-/* Success or error message */
-.contact-form .message {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  text-align: center;
-}
-
-/* Sidebar styles */
-.sidebar {
-  background: linear-gradient(
-    to top,
-    rgba(249, 223, 215, 1),
-    rgba(248, 224, 215, 1),
-    rgba(232, 195, 182, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1),
-    rgba(166, 136, 125, 1)
-  );
-  padding: 0rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-  align-content: space-between;
-  /* align-items: ; */
-  justify-content: space-between;
-}
-
-.social-icons a {
-  /* padding: 10px 1px; */
-  width: clamp(1em, 2.5vw + 0.45rem, 3.5em);
-  transition: 0.25s;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2);
-}
-
-/* Main content area */
-
-.main-content {
-  height: 100dvh;
-
-  overflow-y: scroll;
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  width: 80%;
-  margin: auto auto;
-}
-
-.main-content::-webkit-scrollbar {
-  display: none;
-}
-
-.big-flow > * + * {
+.flow-2 > * + * {
   margin-top: 4rem;
 }
 
-.Small-flow > * + * {
-  margin-top: 2rem;
+.flow-3 > * + * {
+  margin-top: 6rem;
 }
 
-.main-content h1 {
-  background-image: repeating-linear-gradient(
-    35deg,
-    rgba(248, 224, 215, 1),
-    rgba(218, 174, 165, 1),
-    rgb(242, 205, 192),
-    rgba(197, 158, 149, 1),
-    rgba(232, 195, 182, 1),
-    rgba(197, 158, 149, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1)
-  );
-  /* color: lightpink; */
-  color: transparent;
-  background-clip: text;
+.flow-4 > * + * {
+  margin-top: 8rem;
 }
 
-.loop {
-  animation: titleGradient 1s linear infinite;
+.beige-bg {
+  background: var(--main-bg-colour);
 }
 
-@keyframes titleGradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 0%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
+.blue-bg-gradient {
+  background: var(--banner-bg);
+  background: var(--banner-bg-gradient);
 }
 
-.cta-button {
-  background: #2b2b2b;
-  color: white;
-  padding: 1em 2.5em;
-  text-decoration: none;
-  border-radius: 2.5px;
-  font-size: 0.85em;
-  transition: 0.3s;
+.yellow-bg {
+  background: var(--banner-bg-colour-2);
 }
 
-.cta-button:hover {
-  color: lightpink;
-  border: inset 3px solid #a67a6c;
+nav {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-/* Concert images grid */
-.concert-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+.noise {
+  opacity: 1;
+  background-image: url(assets/Images/Noise.png);
 }
 
-.gap-1 {
-  gap: 0.75rem;
+.marginLeft {
+  margin-left: auto;
 }
 
-.gap-2 {
+.marginEven {
+  margin: 0 auto;
+}
+
+.marginEvenChildren > * {
+  margin: auto;
+}
+
+.textAlign {
+  text-align: center;
+}
+
+.gap-10 {
+  gap: 1rem;
+}
+
+.gap-20 {
   gap: 2rem;
 }
 
-.crop > * {
+.gap-50 {
+  gap: 5rem;
+}
+
+.gap-100 {
+  gap: 10rem;
+}
+/* Transistion onto page onclick */
+.pageTransistion > * {
+  /* transition:; */
+}
+
+.text-clr-white {
+  color: #ffffffcf;
+}
+
+.font-Stretch {
+  transform: scaleY(1.15);
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+/* block */
+
+.ContactForm {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+}
+
+.ContactForm h2 {
+  font-family: sans-serif;
+  font-weight: 300;
+}
+
+.ContactForm h3 {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: var(--font-size-xs);
+}
+
+.ContactForm form {
+  margin: 40px 50px;
+}
+
+.ContactForm img {
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  border-radius: 10px 0 0 10px;
 }
 
-/* Right panel with background image */
-.right-panel {
-  background: url("./assets/Saloni.png") center/cover no-repeat,
-    linear-gradient(
-      to top,
-      rgba(249, 223, 215, 1),
-      rgba(248, 224, 215, 1),
-      rgba(232, 195, 182, 1),
-      rgba(218, 174, 165, 1),
-      rgba(197, 158, 149, 1),
-      rgba(166, 136, 125, 1)
-    );
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-}
-
-.right-panel h2 {
-  font-size: 24px;
-  margin: 0;
-}
-
-.right-panel p {
-  margin: 0;
-  font-size: 16px;
-}
-
-.rhap_container {
-  background: linear-gradient(
-    to right,
-    #9d9d9d,
-    #a3a3a3
-  ); /* Light pink gradient */
-  border-radius: 30px; /* Smooth rounded corners */
-  padding: 15px 30px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rhap_progress-bar {
-  background: #fff;
-  height: 5px;
-  border-radius: 5px;
-}
-
-.rhap_progress-filled {
-  background: #ffa4c4; /* Soft pink progress bar */
-}
-
-.rhap_controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rhap_controls button {
-  background: transparent;
+input,
+textarea {
+  color: black;
+  width: 100%;
   border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: #007bff;
+}
+
+/* From Uiverse.io by Creatlydev */
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: rgba(0, 0, 0, 0.897);
   color: #fff;
-  font-size: 36px; /* Larger icons for a more fun look */
-  margin: 0 15px; /* Spread the buttons out */
-  transition: transform 0.2s ease-in-out;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
 }
 
-.rhap_controls button:hover {
-  color: #f5e2e6; /* Lighter pink on hover */
-  transform: scale(1.2); /* Slight scale-up effect */
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  background-color: #ffffffe0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
-.rhap_time {
-  font-size: 14px;
-  color: #ffe4e1; /* Light pink time text */
+.button:hover {
+  background-color: #000;
 }
 
-.rhap_volume-bar {
-  background: rgba(255, 255, 255, 0.6); /* Transparent volume bar */
+.button:hover .button__icon-wrapper {
+  color: #000;
 }
 
-.rhap_button-clear {
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+/* From Uiverse.io by adamgiebl */
+/* From Uiverse.io by Creatlydev */
+
+.padding-10 {
+  /* margin: 100px; */
+}
+
+.white-txt {
+  color: white;
+}
+
+.lightgrey-txt {
+  color: #5a5a5a;
+}
+
+/* ! Change this name, it doesnt represent what we need */
+.hero {
+  position: relative;
+  width: 100%;
+  /*? overflow: hidden; */
+  height: 100%;
+  /*! border radius needs utility instead */
+  border-radius: 10px;
+}
+
+.CD {
+  padding: 50px 0;
+}
+
+.bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  pointer-events: none; /* prevent interference with interaction */
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  padding-top: 100px;
+  border-radius: 10px;
+}
+
+.heroGradientBG {
+  background: var(--banner-bg);
+  background: var(--banner-bg-gradient);
+  /* mix-blend-mode: soft-light; */
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.StarBG {
+  background: url(../public/assets/Images/StarBG3.png);
+  mix-blend-mode: soft-light;
+  background-size: auto;
+  pointer-events: none; /* prevent interference with interaction */
+
+  /* opacity: 2.2; */
+}
+
+/* !It is NOT rounding correctly */
+.NoiseBG {
+  background: url(../public/assets/Images/noise2.png);
+  opacity: 0.075;
+  background-repeat: repeat;
+  /* ! teMP fix */
+  border-radius: 10px;
+}
+
+.button-bg-paint {
+  background: url(../public/assets/Images/paint.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.heroContent img {
+  position: relative;
+  width: clamp(1rem, 43%, 35rem);
+}
+
+.heroContent > div {
+  position: relative;
+  bottom: 45px;
+  left: 32px;
+}
+
+.swiper {
+  width: 600px; /* set fixed width or 100% for full width */
+  height: 400px; /* set fixed height or let images define it */
+  border-radius: 10px; /* rounded corners */
+  overflow: hidden; /* hide overflow from slides */
+  background-color: #000; /* optional background */
+
+  margin-bottom: 100px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  margin: 0 4px;
+  transition: background 0.3s;
+  border-radius: 50%;
+}
+
+/* Active bullet */
+.swiper-pagination-bullet-active {
+  background: #dc722b; /* highlight color */
+}
+
+/*  */
+
+.footer {
+  background: #000;
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: gray;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
   color: #fff;
 }
 
-@media (width <= 1400px) {
-  .concert-images {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
   }
 }
 
-
-/* .container {
-  display: grid;
-  grid-template-columns: 1fr 5fr 5fr;
-  width: 78vw;
-
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  /* border-radius: 10px; */
-  
 /* Breakpoints */
 
-@media (max-width: 1200px) {
-  .container {
-  display: block;
-  width: calc(100vw - 4rem);
-    top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
+@media only screen and (max-width: 600px) {
+  .Screen-sizing {
+    max-width: 100%;
   }
-
-  .sidebar {
-  background: linear-gradient(
-    to top,
-    rgba(249, 223, 215, 1),
-    rgba(248, 224, 215, 1),
-    rgba(232, 195, 182, 1),
-    rgba(218, 174, 165, 1),
-    rgba(197, 158, 149, 1),
-    rgba(166, 136, 125, 1)
-  );
-  position: sticky;
-  top: 0;
-  margin-top: 0;
-  z-index: 4;
-
-  padding: 1rem 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  gap: 0rem;
-  align-content: space-around;
-  /* align-items: ; */
-  justify-content: space-between;
-  width: calc(90%);
-}
+/* Gallery/slideshow needed */
 
-.right-panel {
-  background: url("./assets/Saloni.png") center/cover no-repeat,
-    linear-gradient(
-      to top,
-      rgba(249, 223, 215, 1),
-      rgba(248, 224, 215, 1),
-      rgba(232, 195, 182, 1),
-      rgba(218, 174, 165, 1),
-      rgba(197, 158, 149, 1),
-      rgba(166, 136, 125, 1)
-    );
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 10px;
-
-  display: none;
-}
-
-
-
-/* ICONS AND BACKGROUND, and bottom banner */
-}
-
-@media (max-width: 600px) {
-
-  .container {
-  display: block;
-  width: calc(100vw );
-    top: 0;
-  background: url("./assets/bg-crumpled.png") center/cover no-repeat,
-    linear-gradient(white, white);
-  }
-
-}
+/* Box shadow for contact form fill in page, with only the box being an inside shadow. Or find a way to make a line under  */
+/* that needs to be a form */
+/* Make sure h1's, h2's are correct after html is written up */
+/* button needed here, make sure to add cursor pointer */
+/* When collapsing need hamburger */
+/* Collapsing banners? */
+/* Re-do the components */
