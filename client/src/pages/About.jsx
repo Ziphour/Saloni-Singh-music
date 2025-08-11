@@ -6,7 +6,7 @@ const About = () => {
     // Flow?
     <div className="flow-3">
       <section className="flow-2  Screen-sizing-3 marginEven">
-        <h2 className="textAlign"> About me :P</h2>
+        <h2 className="textAlign"> My story</h2>
         <div className="grid grid-3 gap-50">
           <div className="span-1 gap-50">
             <img
