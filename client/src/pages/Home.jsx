@@ -31,7 +31,7 @@ const HomePage = () => (
     </section>
     {/* Promo */}
     <section className=" CD yellow-bg ">
-      <article className=" Screen-sizing-2 marginEven float gap-10 ">
+      <article className=" Screen-sizing-2 marginEven float  ">
         <div className="">
           <img className="float-right" src="./assets/Images/CD.png" />
 
@@ -42,7 +42,7 @@ const HomePage = () => (
             (like...a lot). Whether you're singing along in the shower or
             jamming out in traffic, this one’s for you. Go check it out, turn it
             up, and let the music do its thing For you Go check it out, turn it
-            up, and let the music do its thing For you Go check it out, turn it.
+            up, and let the musicsian do it
           </p>
         </div>
       </article>

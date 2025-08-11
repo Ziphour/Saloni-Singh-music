@@ -226,6 +226,12 @@ button:hover {
   align-items: center;
 }
 
+.flexdown {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid {
   display: grid;
 }
@@ -256,7 +262,7 @@ button:hover {
 }
 
 .Screen-sizing-3 {
-  max-width: calc(100% - 25rem);
+  max-width: calc(100% - 15rem);
 }
 
 .hoverExpand {

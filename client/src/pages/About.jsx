@@ -4,10 +4,11 @@ import ConcertImages from "../components/ConcertImages";
 const About = () => {
   return (
     // Flow?
-    <div className="flow-2">
-      <section className="Screen-sizing-3 marginEven">
-        <div className="grid grid-3">
-          <div className="span-1">
+    <div className="flow-3">
+      <section className="flow-2  Screen-sizing-3 marginEven">
+        <h2 className="textAlign"> About me :P</h2>
+        <div className="grid grid-3 gap-50">
+          <div className="span-1 gap-50">
             <img
               src="/assets/Images/polaroidFrame.png"
               alt="Image of the artist Saloni Singh"
@@ -19,27 +20,28 @@ const About = () => {
             heart of Miami, where the sounds of dance beats and soulful melodies
             were always in the air. From the time I could walk, I was putting on
             shows in the living room, stealing my mom’s hairbrush to use as a
-            mic, and dreaming of singing to crowds who knew every word. Now, I’m
-            living that dream one beat at a time. constantly chasing the next
-            big sound that’ll make your heart race. For me, music is magic —
-            it’s how we connect, how we heal, how we celebrate. So if you’re
-            into big choruses, honest lyrics, and the kind of songs that make
-            you want to sing with the windows down, I’m your girl. Welcome to my
-            world — let’s dance through it together. Honest lyrics, and the kind
-            of songs that make y your girl. Welcome to my world — let’s dance
-            through it together. Hey, I’m Saloni Singh — a pop artist with
-            glitter in my veins and a love for
+            mic, and dreaming of singing to crowds
           </p>
         </div>
         <p>
           My music is all about emotion you can move to. I blend catchy pop
           melodies with dancefloor-ready beats, but I always make sure the
           lyrics come from something real—love, heartbreak, self-discovery, and
-          everything in between.
+          everything in between. My music is all about emotion you can move to.
+          I blend catchy pop melodies with dancefloor-ready beats, but I always
+          make sure the lyrics come from something real—love, heartbreak,
+          self-discovery, and everything in between. My music is all about
+          emotion you can move to. I blend catchy pop melodies with
+          dancefloor-ready beats, but I always make sure the lyrics come from
+          something real—love, heartbreak, self-discovery, and everything in
+          between.
         </p>
       </section>
-      <section>
-        <ConcertImages />
+      <section className="flow-2 textAlign">
+        <h2>Tour</h2>
+        <div>
+          <ConcertImages />
+        </div>
       </section>
     </div>
   );

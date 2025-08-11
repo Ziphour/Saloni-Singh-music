@@ -14,7 +14,7 @@ import "swiper/css/scrollbar";
 // import concert6 from "../assets/concert6.webp"; // Adjust the path based on your structure
 
 const ConcertImages = () => (
-  <div className="marginEven  " style={{ width: "500px" }}>
+  <>
     <Swiper
       modules={[Navigation, Autoplay, Pagination]}
       autoplay={{
@@ -39,7 +39,7 @@ const ConcertImages = () => (
         <img src="/assets/Gallery/3.jpg" alt="" />
       </SwiperSlide>
     </Swiper>
-  </div>
+  </>
 );
 
 // Can use for Loop to make all the swiper slides appear, Removing the need
