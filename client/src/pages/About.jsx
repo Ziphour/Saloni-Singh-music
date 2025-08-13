@@ -10,6 +10,7 @@ const About = () => {
         <div className="grid grid-3 gap-50">
           <div className="span-1 gap-50">
             <img
+              id="Polaroid"
               src="/assets/Images/polaroidFrame.png"
               alt="Image of the artist Saloni Singh"
             />
