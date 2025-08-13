@@ -1,4 +1,5 @@
 /* Global styles */
+
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Permanent+Marker&display=swap");
 @font-face {
   font-family: "Azurite";
@@ -51,14 +52,15 @@
   --font-marker: "";
   --font-navbar: "Veteran TypeWriter";
 
-  --font-size-xs: clamp(0.75rem, 0.7rem + 0.2vw, 0.875rem); /* 12–14px */
-  --font-size-sm: clamp(0.875rem, 0.8rem + 0.3vw, 1rem); /* 14–16px */
-  --font-size-md: clamp(1rem, 0.9rem + 0.5vw, 1.25rem); /* 16–20px */
-  --font-size-lg: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem); /* 20–24px */
-  --font-size-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem); /* 24–32px */
-  --font-size-2xl: clamp(2rem, 1.7rem + 1.2vw, 2.5rem); /* 32–40px */
-  --font-size-3xl: clamp(2.5rem, 2rem + 1.5vw, 3rem); /* 40–48px */
-  --font-size-4xl: clamp(3rem, 2.5rem + 1.75vw, 3.5rem); /* 48–56px */
+  --font-size-xs: clamp(0.7813rem, 0.7194rem + 0.275vw, 0.96rem);
+  --font-size-sm: clamp(0.9375rem, 0.8466rem + 0.4038vw, 1.2rem);
+  --font-size-md: clamp(1.125rem, 0.9952rem + 0.5769vw, 1.5rem);
+  --font-size-lg: clamp(1.35rem, 1.1683rem + 0.8077vw, 1.875rem);
+  --font-size-xl: clamp(1.62rem, 1.3695rem + 1.1135vw, 2.3438rem);
+  --font-size-2xl: clamp(1.944rem, 1.6028rem + 1.5164vw, 2.9297rem);
+  --font-size-3xl: clamp(2.3328rem, 1.8727rem + 2.0451vw, 3.6621rem);
+  --font-size-4xl: clamp(2.7994rem, 2.1838rem + 2.7358vw, 4.5776rem);
+
   --font-size-5xl: clamp(4rem, 3rem + 2vw, 4.5rem); /* 64–72px */
   --font-size-6xl: clamp(5rem, 4rem + 2.5vw, 5.625rem); /* 80–90px */
   --font-size-7xl: clamp(5.5rem, 4.5rem + 3vw, 9rem); /* 90–100px */
@@ -164,7 +166,7 @@ h2 {
 
 p {
   font-family: var(--font-body);
-  font-size: clamp(0.2rem, var(--font-size-sm), 1.125rem);
+  font-size: var(--font-size-xs);
 }
 
 li {
