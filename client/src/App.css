@@ -691,6 +691,7 @@ textarea:focus {
 
   .Screen-sizing-3 {
     max-width: 100%;
+    width: 100%;
   }
 
   .span-1 img {
@@ -701,6 +702,9 @@ textarea:focus {
 
   .span-1 {
     margin: 0 auto;
+  }
+  .Screen-sizing {
+    max-width: 100%;
   }
 }
 
@@ -720,12 +724,6 @@ textarea:focus {
 }
 
 /* Breakpoints */
-
-@media only screen and (max-width: 600px) {
-  .Screen-sizing {
-    max-width: 100%;
-  }
-}
 
 /* Gallery/slideshow needed */
 
