@@ -682,6 +682,8 @@ textarea:focus {
 
   .ContactForm img {
     display: none;
+    display: transparent;
+
     border-radius: 10px 10px 0 0px;
   }
 
