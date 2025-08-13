@@ -695,7 +695,7 @@ textarea:focus {
     width: 100%;
   }
 
-  .span-1 img {
+  #Polaroid img {
     width: 50%;
     margin: 0 auto;
   }
