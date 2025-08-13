@@ -682,6 +682,7 @@ textarea:focus {
 
   .ContactForm img {
     display: none;
+
     border-radius: 10px 10px 0 0px;
   }
 
@@ -694,10 +695,17 @@ textarea:focus {
     width: 100%;
   }
 
-  .span-1 img {
-    display: block;
+  #Polaroid img {
     width: 50%;
     margin: 0 auto;
+  }
+
+  #Polaroid {
+    display: block;
+  }
+
+  #microphone {
+    display: none;
   }
 
   .span-1 {
