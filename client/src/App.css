@@ -206,7 +206,7 @@ button:hover {
 
 .float-right {
   float: right;
-  /* shape-margin: 5rem; */
+  shape-margin: 1.5rem;
   shape-outside: ellipse(
     33.33% 46.04% at 213px 134px
   ); /* shape-outside: url(assets/Images/CD.png); */
@@ -474,7 +474,7 @@ textarea:focus {
 /* From Uiverse.io by Creatlydev */
 
 .padding-10 {
-  /* margin: 100px; */
+  padding: 30px;
 }
 
 .white-txt {
@@ -627,6 +627,79 @@ textarea:focus {
 .footer .row a i {
   font-size: 2em;
   margin: 0% 1%;
+}
+
+@media only screen and (max-width: 1455px) {
+  .Screen-sizing {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  /* block mode and straight down with hamburger */
+  .heroContent {
+    display: block;
+  }
+
+  .heroContent img {
+    display: block;
+    width: inherit;
+  }
+
+  .heroContent > div {
+    position: inherit;
+    bottom: auto;
+    left: auto;
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .float {
+    display: block;
+  }
+
+  .float-right + p {
+    display: block;
+    margin-top: 4rem;
+  }
+
+  .float-right {
+    float: none;
+    display: block;
+  }
+
+  /* 2nd page */
+
+  .grid {
+    display: block;
+  }
+
+  .grid-3 img {
+    margin: 0 auto;
+  }
+
+  .ContactForm img {
+    display: none;
+    border-radius: 10px 10px 0 0px;
+  }
+
+  .Screen-sizing-2 {
+    width: 100%;
+  }
+
+  .Screen-sizing-3 {
+    max-width: 100%;
+  }
+
+  .span-1 img {
+    /* width: 50%; */
+  }
+
+  .span-1 {
+    margin: auto;
+  }
 }
 
 @media (max-width: 720px) {
