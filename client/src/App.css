@@ -528,11 +528,9 @@ textarea:focus {
 }
 
 .StarBG {
-  background: url(../public/assets/Images/StarBG3.png);
+  background: url(../public/assets/Images/StarBG4.png) center / cover no-repeat;
   mix-blend-mode: soft-light;
-  background-size: auto;
   pointer-events: none; /* prevent interference with interaction */
-
   /* opacity: 2.2; */
 }
 
