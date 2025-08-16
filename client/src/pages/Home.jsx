@@ -18,7 +18,7 @@ const HomePage = () => (
             </h2>
           </div>
           <div className="">
-            <a href="" className="button-bg-paint padding-10" alt="">
+            <a href="" className="button-bg-paint padding-80" alt="">
               <button className="marginEven white-txt">Stream Here</button>
             </a>
           </div>
