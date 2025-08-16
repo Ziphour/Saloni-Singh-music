@@ -20,6 +20,7 @@
   font-family: "Kuashe";
   src: url(../public/assets/Fonts/Kuashe-Regular.otf) format("opentype");
 }
+
 :root {
   --main-bg-colour: #e6ccb6;
 
@@ -49,7 +50,7 @@
   --font-header: "Kuashe";
   --font-subheading: "Azurite";
   --font-body: "Merriweather";
-  --font-marker: "";
+  --font-marker: "Permanent Marker";
   --font-navbar: "Veteran TypeWriter";
 
   --font-size-xs: clamp(0.7813rem, 0.7194rem + 0.275vw, 0.96rem);
@@ -159,7 +160,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-lg);
   font-family: var(--font-subheading);
   letter-spacing: 2px;
 }
@@ -172,7 +173,7 @@ p {
 li {
   font-family: var(--font-navbar);
   font-size: 1.5rem;
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
 }
 
 li img {
@@ -278,7 +279,7 @@ button:hover {
 }
 
 .flow-1 > * + * {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .flow-2 > * + * {
@@ -423,6 +424,7 @@ textarea:focus {
   align-items: center;
   gap: 0.75rem;
   background-color: rgba(0, 0, 0, 0.897);
+
   color: #fff;
   border-radius: 10rem;
   font-weight: 600;
@@ -473,8 +475,12 @@ textarea:focus {
 /* From Uiverse.io by adamgiebl */
 /* From Uiverse.io by Creatlydev */
 
-.padding-10 {
+.padding-30 {
   padding: 30px;
+}
+
+.padding-80 {
+  padding: 80px;
 }
 
 .white-txt {
@@ -559,6 +565,12 @@ textarea:focus {
   position: relative;
   bottom: 45px;
   left: 32px;
+}
+
+.heroContent button {
+  font-family: var(--font-marker);
+  letter-spacing: 2px;
+  margin-right: 15px;
 }
 
 .swiper {
