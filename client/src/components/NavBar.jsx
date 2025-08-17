@@ -6,18 +6,24 @@ const Navbar = () => {
       <nav className="Screen-sizing-2 marginEven flex flexSpread nav ">
         <ul className="flex gap-50">
           <li>
-            <Link to="/">Home</Link>
+            <Link className="navbtn padding-10" to="/">
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/About">My World</Link>
+            <Link className="navbtn padding-10" to="/About">
+              My World
+            </Link>
           </li>
           <li>
-            <Link to="/Contact">Contact</Link>
+            <Link className="navbtn padding-10" to="/Contact">
+              Contact
+            </Link>
           </li>
         </ul>
         {/* apply relative on here and then
           push it all the way to the left, look it up online if needed */}
-        <ul className="flex  right-position">
+        <ul className="flex gap-10 right-position">
           <li>
             <button>
               <img src="/assets/Icons/Instagram.png" alt="Instagram Icon" />
