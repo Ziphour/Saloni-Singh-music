@@ -21,6 +21,11 @@
   src: url(../public/assets/Fonts/Kuashe-Regular.otf) format("opentype");
 }
 
+@font-face {
+  font-family: "Kisah";
+  src: url(../public/assets/Fonts/KisahHororSobat.ttf) format("truetype");
+}
+
 :root {
   --main-bg-colour: #e6ccb6;
 
@@ -47,7 +52,7 @@
 
   --flow-1: 2rem;
 
-  --font-header: "Kuashe";
+  --font-header: "Kisah";
   --font-subheading: "Azurite";
   --font-body: "Merriweather";
   --font-marker: "Permanent Marker";
@@ -153,7 +158,7 @@ a:hover {
 }
 
 h1 {
-  font-size: var(--font-size-8xl);
+  font-size: var(--font-size-7xl);
   font-family: var(--font-header);
   font-weight: 900;
   color: #ffffff5d;
@@ -174,6 +179,7 @@ li {
   font-family: var(--font-navbar);
   font-size: 1.5rem;
   font-size: var(--font-size-md);
+  color: var(--nav-colour-1);
 }
 
 li img {
@@ -254,6 +260,7 @@ button:hover {
 .right-position {
   position: absolute;
   right: 0;
+  top: 4px;
 }
 
 .Screen-sizing {
@@ -335,7 +342,7 @@ nav {
 }
 
 .gap-10 {
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .gap-20 {
@@ -449,6 +456,14 @@ textarea:focus {
   overflow: hidden;
 }
 
+.navbtn:hover,
+.navbtn:active {
+  background-color: var(--nav-colour-1);
+  background-size: 300% 100%;
+  transition: 300ms ease-in-out;
+  color: var(--nav-colour-2);
+}
+
 .button:hover {
   background-color: #000;
 }
@@ -474,6 +489,10 @@ textarea:focus {
 
 /* From Uiverse.io by adamgiebl */
 /* From Uiverse.io by Creatlydev */
+
+.padding-10 {
+  padding: 10px 20px;
+}
 
 .padding-30 {
   padding: 30px;
