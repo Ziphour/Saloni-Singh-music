@@ -456,7 +456,8 @@ textarea:focus {
   overflow: hidden;
 }
 
-.navbtn:hover {
+.navbtn:hover,
+.navbtn:active {
   background-color: var(--nav-colour-1);
   background-size: 300% 100%;
   transition: 300ms ease-in-out;
