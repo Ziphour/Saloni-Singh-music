@@ -45,9 +45,13 @@ const ContactForm = () => {
     <>
       <section className="marginEven  Screen-sizing-3 grid grid-3 gap-20 ContactForm ">
         <div className="span-1">
-          <img src="/assets/Images/mic.png" alt="Microphone in a theatre" />
+          <img
+            src="/assets/Images/mic.png"
+            id="Microphone"
+            alt="Microphone in a theatre"
+          />
         </div>
-        <form className="span-2 padding-10" onSubmit={sendEmail}>
+        <form className="flow-1 span-2 padding-30" onSubmit={sendEmail}>
           <div>
             <h2>Get in touch</h2>
             <h3>Contact the team of Saloni Singh for business inquires.</h3>
