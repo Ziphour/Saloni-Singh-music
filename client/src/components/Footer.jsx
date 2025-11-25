@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <footer>
         <div className="footer">
-          <div className="row">
+          {/* <div className="row">
             <a href="#">
               <i className="fa fa-facebook"></i>
             </a>
@@ -18,7 +18,7 @@ const Footer = () => {
             <a href="#">
               <i className="fa fa-twitter"></i>
             </a>
-          </div>
+          </div> */}
 
           <div className="row">
             <ul>
